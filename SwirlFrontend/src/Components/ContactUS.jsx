@@ -436,7 +436,7 @@ const ContactUS = () => {
 
               <div className="input3 flex items-center justify-center mt-3 gap-2">
                 <div
-                  className={`relative w-[33.5%] select1 z-[2]`}
+                  className={`relative w-[33.5%] select1 z-[3]`}
                   style={{ border: ` ${border}` }}
                 >
                   <button
@@ -466,7 +466,7 @@ const ContactUS = () => {
                     </svg>
                   </button>
                   {isOpen && (
-                    <ul className="absolute w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg p-0 h-56 overflow-y-scroll">
+                    <ul className="absolute w-full mt-1 bg-white border z-20 border-gray-300 rounded-md shadow-lg p-0 h-56 overflow-y-scroll">
                       {[
                         "150 USD TO 600 USD",
                         "600 USD TO 1200 USD",
@@ -477,12 +477,12 @@ const ContactUS = () => {
                         <li
                           key={option}
                           onClick={() => handleSelectOption(option)}
-                          className="px-3 py-2 text-gray-700 cursor-pointer hover:bg-[#EBE1F9] focus:outline-none text-[14px]"
+                          className="px-3 py-2 text-gray-700 cursor-pointer z-20 hover:bg-[#EBE1F9] focus:outline-none text-[14px]"
                         >
                           <span
                             className={`${
                               selectedOption === option ? "font-bold" : ""
-                            } block px-0 py-2`}
+                            } block px-0 py-2 `}
                           >
                             {option}
                           </span>
