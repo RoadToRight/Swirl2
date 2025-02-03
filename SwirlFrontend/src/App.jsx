@@ -28,7 +28,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from 'lenis'
+
 import { IoCloseOutline } from "react-icons/io5";
 import styled from "styled-components";
 import Work2 from "./Components/Work2.jsx";
