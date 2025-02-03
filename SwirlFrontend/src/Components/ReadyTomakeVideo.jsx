@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
-import Context1 from "../Context/Context1";
 import { Link, useLocation } from "react-router-dom";
 // import { useGSAP } from "@gsap/react";
 // import { gsap } from "gsap";
@@ -10,14 +9,9 @@ import { Link, useLocation } from "react-router-dom";
 // gsap.registerPlugin(ScrollTrigger);
 
 const ReadyTomakeVideo = () => {
-  const { DarkLight } = useContext(Context1);
   let ready = useRef();
   let readyparent = useRef()
   let location = useLocation()
-  let Textcolor = DarkLight ? "black" : "white";
-  let bgcolor = DarkLight ? "bg-lightpurple" : "bg-[#230646]";
-  let bgcolor2 = DarkLight ? "white" : "black";
-
 
 
   useEffect(() => {

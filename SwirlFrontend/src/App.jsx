@@ -13,7 +13,6 @@ import Pricing from "./Components/Pricing";
 import OneQuote from "./Components/OneQuote";
 import ContactUS from "./Components/ContactUS";
 import Aboutus from "./Components/Aboutus";
-import Work from "./Components/Work";
 import Circle from "./Components/Circle";
 import Threebenefits from "./Components/Threebenefits";
 import TopBrands from "./Components/TopBrands";
@@ -29,12 +28,14 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from 'lenis'
 import { IoCloseOutline } from "react-icons/io5";
 import styled from "styled-components";
 import Work2 from "./Components/Work2.jsx";
-import { Alldata } from "./creationsImg.js";
+
 
 // gsap.registerPlugin(ScrollTrigger);
+
 function App() {
   const [DarkLight, setDarkLight] = useState(true);
   const [loading, setLoading] = useState(true);
@@ -54,6 +55,9 @@ const [SlideLoad, setSlideLoad] = useState(true)
   const PlayYouTubeCard = () => {
     setYoutubeVideo((props) => !props);
   };
+
+
+  
   useEffect(() => {
     // Change the document title based on the current route
     if (location.pathname === "/") {
@@ -206,7 +210,7 @@ const [SlideLoad, setSlideLoad] = useState(true)
 
       {loading && <Loader />}
       {/* <Loader /> */}
-      <Scroll />
+      <Scroll/>
       <ToastContainer
         position="top-right"
         autoClose={5000}

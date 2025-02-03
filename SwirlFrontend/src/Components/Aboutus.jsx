@@ -4,52 +4,52 @@ import Context1 from '../Context/Context1';
 
 const Aboutus = () => {
 
-  const {DarkLight  } = useContext(Context1)
+  const { DarkLight } = useContext(Context1)
 
-  let Textcolor = DarkLight ? "black" : "white" ;
-  let bgcolor = DarkLight ? "white" : "black" ;
-  let bgcolor2 = DarkLight ? "#ffffff64" : "transparent" ;
+  let Textcolor = DarkLight ? "black" : "white";
+  let bgcolor = DarkLight ? "white" : "black";
+  let bgcolor2 = DarkLight ? "#ffffff64" : "transparent";
 
   return (
     <AboutDiv className={`bg-${bgcolor}`}>
-            <div className="ball absolute right-0 top-6">
-    <img src="/Project IMG/ball.png" alt="" />
-    </div>
-        <div className="text container text-center">
-            <div className={`head-top leading-[57.6px] font-bold text-[38px] text-${Textcolor}`}>We make videos that bring companies to life</div>
-        
+      <div className="ball absolute right-0 top-6">
+        <img src="/Project IMG/ball.png" alt="" />
+      </div>
+      <div className="text container text-center">
+        <div className={`head-top leading-[57.6px] font-bold text-[38px] text-${Textcolor}`}>We make videos that bring companies to life</div>
+
         <div className={`small1 font-bold leading-[24px] mt-3 text-${Textcolor}`}>Our Company</div>
         <div className={`small2 font-light leading-[25px] mt-3 text-${Textcolor}`}>Browse through our award-winning work for both live-action and animation, motion graphics and get your creative juices flowing for your next video project.
 
         </div>
-        </div>
-        <br />
+      </div>
+      <br />
 
-        <div className={`about bg-${bgcolor2}`}>
+      <div className={`about bg-${bgcolor2}`}>
         <div className="sec1 mt-4">
-            <div className="left1 left flex justify-center  flex-col ">
-                    <div className={`head font-bold leading-[48px] text-${Textcolor}`}>Who are we?</div>
-                    <div className={`small font-normal leading-[25px] mt-3 text-${Textcolor}`}>At Swirl 365, we’re a team of forward-thinkers and problem-solvers dedicated to crafting exceptional digital experiences. From 2D and 3D animation to web and app development, social media marketing, and beyond, we specialize in providing tailored solutions to meet the unique needs of our clients. Our mission is to transform ideas into impactful outcomes, and we pride ourselves on delivering quality, innovation, and reliability in everything we do. Together, we are Swirl 365 a hub where creativity and technology converge.</div>
-            </div>
+          <div className="left1 left flex justify-center  flex-col ">
+            <div className={`head font-bold leading-[48px] text-${Textcolor}`}>Who are we?</div>
+            <div className={`small font-normal leading-[25px] mt-3 text-${Textcolor}`}>At Swirl 365, we’re a team of forward-thinkers and problem-solvers dedicated to crafting exceptional digital experiences. From 2D and 3D animation to web and app development, social media marketing, and beyond, we specialize in providing tailored solutions to meet the unique needs of our clients. Our mission is to transform ideas into impactful outcomes, and we pride ourselves on delivering quality, innovation, and reliability in everything we do. Together, we are Swirl 365 a hub where creativity and technology converge.</div>
+          </div>
 
-            <div className="right1 flex justify-center items-center">
-                <img src="/Project IMG/darkpurple2.webp" alt="" />
-            </div>
+          <div className="right1 flex justify-center items-center">
+            <img src="/Project IMG/darkpurple2.webp" alt="" />
+          </div>
 
         </div>
         <div className="sec2">
-        <div className="right2 flex justify-center items-center">
-                <img src="/Project IMG/about2.webp" alt="" />
-            </div>
-            <div className="left2 left flex justify-center  flex-col">
-                    <div className={`head font-bold leading-[48px] text-${Textcolor}`}>Our Story</div>
-                    <div className={`small font-normal leading-[25px] mt-3 text-${Textcolor}`}>Swirl 365 was born from a passion for innovation and creativity. What started as a small team of dreamers with big ideas has grown into a full-fledged software house delivering cutting-edge solutions. Our journey began with the desire to bridge the gap between technology and artistry, offering services that combine technical expertise with creative excellence. Over the years, we’ve helped clients across industries bring their visions to life, and our story is still unfolding with every project we take on.</div>
-            </div>
+          <div className="right2 flex justify-center items-center">
+            <img src="/Project IMG/about2.webp" alt="" />
+          </div>
+          <div className="left2 left flex justify-center  flex-col">
+            <div className={`head font-bold leading-[48px] text-${Textcolor}`}>Our Story</div>
+            <div className={`small font-normal leading-[25px] mt-3 text-${Textcolor}`}>Swirl 365 was born from a passion for innovation and creativity. What started as a small team of dreamers with big ideas has grown into a full-fledged software house delivering cutting-edge solutions. Our journey began with the desire to bridge the gap between technology and artistry, offering services that combine technical expertise with creative excellence. Over the years, we’ve helped clients across industries bring their visions to life, and our story is still unfolding with every project we take on.</div>
+          </div>
 
-            
+
 
         </div>
-        </div>
+      </div>
     </AboutDiv>
   )
 }
@@ -115,8 +115,7 @@ background-image: url("/Project IMG/contactbg.webp");
     .left1{
         @media (max-width:900px) {
           order:1;
-            /* order: 0;
-           */
+       
     }
     
     }
@@ -139,7 +138,7 @@ background-image: url("/Project IMG/contactbg.webp");
     .right2{
         @media (max-width:900px) {
     
-            /* order: 1; */
+ 
             text-align: center;
     
     }
@@ -173,19 +172,19 @@ background-image: url("/Project IMG/contactbg.webp");
     @media (max-width:442px) {
     
         font-size: 33px;
-        /* background-color: red; */
+
         
 }
 @media (max-width:442px) {
     
     font-size: 33px;
-    /* background-color: red; */
+   
     
 }
 @media (max-width:373px) {
     
     font-size: 30px;
-    /* background-color: red; */
+ 
     
 }
   }

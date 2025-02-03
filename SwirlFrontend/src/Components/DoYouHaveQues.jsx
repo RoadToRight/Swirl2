@@ -8,34 +8,34 @@ import Context1 from "../Context/Context1";
 // gsap.registerPlugin(ScrollTrigger);
 const DoYouHaveQues = () => {
 
-  const {DarkLight,Questions } = useContext(Context1)
+  const { DarkLight } = useContext(Context1)
 
-  let Textcolor = DarkLight ? "black" : "white" 
- 
-  let bgcolor2 = DarkLight ? "white" : "black" ;
-let q = useRef();
-let qchild = useRef();
+  let Textcolor = DarkLight ? "black" : "white"
+
+  let bgcolor2 = DarkLight ? "white" : "black";
+  let q = useRef();
+  let qchild = useRef();
 
   useEffect(() => {
- 
-  window.gsap.from(qchild.current, {
+
+    window.gsap.from(qchild.current, {
       y: 400,  // Start from 200px below the element's initial position
       opacity: 0,  // Start from 0 opacity
       duration: 1,  // Duration for the animation
       ease: 'power3.out',  // Easing function to smooth the transition
       scrollTrigger: {
         trigger: q.current,  // The element to trigger the animation
-        start: '-33% 80%',  
-        end: 'top 30%',  
-        scrub: 1,  
+        start: '-33% 80%',
+        end: 'top 30%',
+        scrub: 1,
       },
     });
   }, []);
 
-//   useEffect(() => {
-//          window.gsap.registerPlugin(window.ScrollTrigger);
-//   window.ScrollTrigger.refresh();
-// }, [location])
+  //   useEffect(() => {
+  //          window.gsap.registerPlugin(window.ScrollTrigger);
+  //   window.ScrollTrigger.refresh();
+  // }, [location])
 
   return (
     <ParentDiv className={`bg-${bgcolor2}`} ref={q}>
@@ -44,27 +44,17 @@ let qchild = useRef();
           Do You Have Questions?
         </div>
         <br />
-    <AccordianCompo Question={"What services does Swirl365 offer?"} Answer={"We provide 2D explainer video production and web development services."}/>
-    <AccordianCompo Question={"How long does it take to create a 2D explainer video?"} Answer={"It typically takes 2-4 weeks, depending on complexity and duration."}/>
+        <AccordianCompo Question={"What services does Swirl365 offer?"} Answer={"We provide 2D explainer video production and web development services."} />
+        <AccordianCompo Question={"How long does it take to create a 2D explainer video?"} Answer={"It typically takes 2-4 weeks, depending on complexity and duration."} />
 
-    <AccordianCompo Question={"What is your process for 2D explainer videos?"} Answer={"We follow a structured process: script, storyboard, animation, and final delivery."}/>
+        <AccordianCompo Question={"What is your process for 2D explainer videos?"} Answer={"We follow a structured process: script, storyboard, animation, and final delivery."} />
 
-    {/* <AccordianCompo Question={"What web development services do you provide?"} Answer={"We create responsive websites, e-commerce platforms, and offer maintenance."}/> */}
-    <AccordianCompo Question={"How much do your services cost?"} Answer={"Costs depend on the project scope; contact us for a detailed quote."}/>
-    <AccordianCompo Question={"Do you work with international clients?"} Answer={"Yes, we work with clients globally and deliver high-quality remote services."}/>
-    <AccordianCompo Question={"What do I need to provide to start a project?"} Answer={"For videos: product details; for websites: objectives, content, and design preferences."}/>
-
-    
-    
-    
-       
+        {/* <AccordianCompo Question={"What web development services do you provide?"} Answer={"We create responsive websites, e-commerce platforms, and offer maintenance."}/> */}
+        <AccordianCompo Question={"How much do your services cost?"} Answer={"Costs depend on the project scope; contact us for a detailed quote."} />
+        <AccordianCompo Question={"Do you work with international clients?"} Answer={"Yes, we work with clients globally and deliver high-quality remote services."} />
+        <AccordianCompo Question={"What do I need to provide to start a project?"} Answer={"For videos: product details; for websites: objectives, content, and design preferences."} />
 
 
-        {/* <div className="accrodian container">
-
-                <div className="text font-semibold leading-[25px]">How is Swirl365 different?</div>
-
-        </div> */}
         <br />
       </div>
     </ParentDiv>
@@ -115,13 +105,6 @@ padding-bottom: 120px;
   max-height: 1000px; /* A large enough max-height value for expansion */
   padding: 1rem 1.25rem; /* Optional padding adjustment when expanded */
 }
-/* .custom-accordion .accordion-body {
-    background-color: red;
-} */
-
-/* When the accordion button is not collapsed, expand the max-height */
-
-
 
 
 

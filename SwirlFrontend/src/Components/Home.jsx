@@ -1,26 +1,36 @@
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
-import Context1 from "../Context/Context1";
+
 
 const Home = () => {
-
-  const { isVideoLoaded, setIsVideoLoaded } = useContext(Context1);
-  const [loaded, setLoaded] = useState(false);
-
-  const handleLoad = () => {
-    setLoaded(true);
-  };
-  const handleCanPlayThrough = () => {
-    setIsVideoLoaded(false)
-  }
 
   return (
     <HomeDiv>
       <div className="video-div">
-        <video muted loop autoPlay="autoplay" preload="auto">
+        {/* <video muted loop autoPlay="autoplay" preload="auto">
           <source src="/Swirl Starting Video.mp4" type="video/mp4"></source>
+        </video> */}
+
+        <video
+          preload="auto"
+          autoPlay
+          muted
+          loop
+          playsInline
+          width="100%" // Adjust this based on your layout
+          height="auto"
+        >
+          <source
+            src="https://res.cloudinary.com/dyxmm2qpt/video/upload/v1738420262/Swirl_Starting_Video_fcmh3k.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://res.cloudinary.com/dyxmm2qpt/video/upload/v1738420262/Swirl_Starting_Video_fcmh3k.webm"
+            type="video/webm"
+          />
+          Sorry, your browser doesn't support embedded videos.
         </video>
-  
+
 
         <div className="background"></div>
         <div className="text z-1 absolute flex justify-center items-center w-full h-full">
@@ -62,25 +72,6 @@ min-height: 100vh;
   object-fit: cover;
 } 
 
-/* iframe{
-  position: absolute;
-    width: auto;
-    height: auto;
-    min-width: 100vw;
-    min-height: 100vh;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-  z-index: -1;
-  object-fit: cover;
-}  */
-/* .iframeDiv{
- 
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-} */
 .background{
     position: absolute;
     top: 0px;

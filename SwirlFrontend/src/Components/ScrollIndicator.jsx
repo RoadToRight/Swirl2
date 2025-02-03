@@ -5,15 +5,18 @@ import styled from "styled-components";
 const Scroll = () => {
   const [Scroll, setScroll] = useState();
 
-  let { x, y } = useWindowScroll();
+  let { y } = useWindowScroll();
 
   useEffect(() => {
+
     let height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
 
     setScroll((y / height) * 100);
   }, [y]);
+
+
 
   return (
     <ScrollDiv>

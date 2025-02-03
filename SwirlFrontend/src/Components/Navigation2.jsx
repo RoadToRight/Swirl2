@@ -17,7 +17,7 @@ const Navigation2 = ({ DarkLight, setDarkLight }) => {
   let bgcolor = DarkLight ? "white" : "black";
   let bgcolor2 = DarkLight ? "black" : "white";
   let Navigate = useNavigate();
-  const { loading2, setloading2 } = useContext(Context1);
+  const { setloading2 } = useContext(Context1);
   let logo = DarkLight
     ? "/Project IMG/navblack.jpg"
     : "/Project IMG/Layer_8.png";

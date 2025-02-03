@@ -4,13 +4,11 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Context1 from "../Context/Context1";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import styled from "styled-components";
-import { IoCloseOutline } from "react-icons/io5";
+
 
 const Cards = ({ img, title, text, img2, text2, url }) => {
   const {
     DarkLight,
-    YoutubeVideo,
-    YoutubeUrl,
     PlayYouTubeCard,
     setYoutubeUrl,
   } = useContext(Context1);
@@ -87,7 +85,7 @@ const Cards = ({ img, title, text, img2, text2, url }) => {
               style={{ width: "21px", height: "21px" }}
             />
           </div>
-          {/* <ListGroup.Item style={{fontSize:"14px",fontWeight:"400px",lineHeight:"27px",backgroundColor:"transparent"}} className={`text-${Textcolor}`}>124 client feedbacks</ListGroup.Item> */}
+       
         </ListGroup>
       </Card>
     </CardDiv>

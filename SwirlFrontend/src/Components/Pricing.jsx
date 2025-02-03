@@ -129,9 +129,7 @@ const Pricing = () => {
 
         <br />
 
-        {/* <div className={`small4 font-bold text-center text-${Textcolor}`}>
-          save up to 64% on an annual plan
-        </div> */}
+   
       </div>
 
       <div className="Plans">

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaVimeoV } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -261,9 +260,6 @@ const FooterDiv = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    /* @media (max-width: 1200px) {
-    width: 500px;
-    } */
     @media (max-width: 991px) {
       flex-direction: column;
 
@@ -286,9 +282,7 @@ const FooterDiv = styled.div`
   .Footer-Sections-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* @media (max-width: 1199px) {
-      gap: 70px;
-    } */
+
 
     width: 100%;
     @media (max-width: 991px) {

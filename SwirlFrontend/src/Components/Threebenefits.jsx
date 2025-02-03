@@ -6,7 +6,7 @@ import { FaVideo } from "react-icons/fa";
 import { IoMdPlayCircle } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import Context1 from "../Context/Context1";
-import { Link, Links } from "react-router-dom";
+import {Link} from "react-router-dom";
 // import { useGSAP } from "@gsap/react";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -17,7 +17,6 @@ const Threebenefits = () => {
 
   let Textcolor = DarkLight ? "black" : "white";
   let bgcolor = DarkLight ? "white" : "black";
-  let bgcolor2 = DarkLight ? "#ffffff64" : "transparent";
   let three = useRef()
 
   const scrollToTop = () => {

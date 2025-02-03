@@ -1,4 +1,3 @@
-// import { useGSAP } from "@gsap/react";
 import React, { useContext, useEffect, useRef, useState } from "react";
 // import gsap from "gsap";
 // import { gsap } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js";
@@ -10,7 +9,7 @@ import Button from "./Button";
 import { FaPlay } from "react-icons/fa";
 import Context1 from "../Context/Context1";
 import { Link } from "react-router-dom";
-import { Alldata } from "../creationsImg";
+
 let images1 = [
   "/Project IMG/trust quay.png",
   "/Project IMG/rixius.png",
@@ -298,27 +297,7 @@ useEffect(() => {
   }
 
 }, [SlideImagesLoad,SlideImagesLoad2,SlideImagesLoad3])
-const setImageSlides = (index,slide) => {
-  
-  setSlideImagesLoad((prev) => ({                    
-    ...prev, // Spread the previous state to keep the existing data
-    [`${index}-${slide}`]: true // Add or update the key-value pair for the specific index
-      }))
-}
-const setImageSlides2 = (index,slide) => {
-  
-  setSlideImagesLoad2((prev) => ({                    
-    ...prev, // Spread the previous state to keep the existing data
-    [`${index}-${slide}`]: true // Add or update the key-value pair for the specific index
-      }))
-}
-const setImageSlides3 = (index,slide) => {
-  
-  setSlideImagesLoad3((prev) => ({                    
-    ...prev, // Spread the previous state to keep the existing data
-    [`${index}-${slide}`]: true // Add or update the key-value pair for the specific index
-      }))
-}
+
   const YoutubeUrlSetterLarge = (index) => {
     images1Url.forEach((x, i) => {
       if (index === i) {

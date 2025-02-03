@@ -13,8 +13,6 @@ const Circle = () => {
   const { DarkLight } = useContext(Context1);
 
   let Textcolor = DarkLight ? "black" : "white";
-  let Textcolor2 = DarkLight ? "white" : "black";
-  let bgcolor = DarkLight ? "#C707E4" : "white";
   let Logo = DarkLight
     ? "/Project IMG/navblack-wtbg.png"
     : "/Project IMG/Layer_8.png";
@@ -46,7 +44,7 @@ const Circle = () => {
     }));
   };
 
-  // Function to reset tilt on mouse leave
+
   const handleMouseLeave = (circle) => {
     setTilts((prev) => ({
       ...prev,
@@ -55,7 +53,7 @@ const Circle = () => {
   };
 
     useEffect(() => {
-    // GSAP animation using the global `gsap` from window object
+   
     window.gsap.from(".imgDiv", {
       x: -300, // Start from 300px left of the element's initial position
       opacity: 0, // Start from 0 opacity
@@ -439,26 +437,18 @@ const CircleDiv = styled.div`
     }
   }
 
-  /* TiltEffect.css */
   .ball {
     transform: rotate(200deg);
   }
 
   .box_item {
-    /* width: 300px;
-  height: 300px;
-  position: relative;
-  margin: 100px auto;
-  background-color: #f0f0f0;
-  border-radius: 10px; */
+
     overflow: hidden;
     transition: transform 0.1s ease-out;
-    /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
   }
   .box_item:hover {
-    transform: scale(1.05); /* Slight scaling effect for extra realism */
+    transform: scale(1.05);
   }
 `;
 

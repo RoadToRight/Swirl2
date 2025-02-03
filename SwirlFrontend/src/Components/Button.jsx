@@ -20,13 +20,6 @@ const Button = ({
       
       <Span
         onClick={() => fnc()}
-        // style={{
-        //   backgroundColor: `${color}`,
-        //   width: `${width}`,
-        //   height: `${height}`,
-        //   color: `${textcolor}`,
-        //   border: `${border}`,
-        // }}
 
         className={`rounded-2xl  leading-[20px] font-bold btnn`}
         $width={width}

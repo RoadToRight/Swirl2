@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import styled from "styled-components";
 import Context1 from "../Context/Context1";
@@ -38,11 +37,11 @@ const Card2Div = styled.div`
   .card {
     @media (max-width: 665px) {
       width: 330px !important;
-      /* height: 40vh; */
+
     }
     @media (max-width: 380px) {
       width: 280px !important;
-      /* height: 40vh; */
+  
     }
   }
 `;

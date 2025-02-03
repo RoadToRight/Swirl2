@@ -10,7 +10,6 @@ const AccordianCompo = ({ Question,Answer }) => {
   const { DarkLight } = useContext(Context1);
 
   let Textcolor = DarkLight ? "black" : "white";
-  let bgcolor = DarkLight ? "bg-lightpurple" : "bg-[#230646]";
   let bgcolor2 = DarkLight ? "white" : "black";
 
   const handleToggle = (index) => {

@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const TopBrandsWithCircle = () => {
   const { DarkLight } = useContext(Context1);
-  const [circle, setcircle] = useState(3);
+  const [ setcircle] = useState(3);
   const [WindowWidth, setWindowWidth] = useState(window.innerWidth)
   const [brandsAnimation, setbrandsAnimation] = useState(false)
   let top = useRef(null);
@@ -15,7 +15,7 @@ const TopBrandsWithCircle = () => {
   const animation = useRef(null);
   let Textcolor = DarkLight ? "black" : "white";
   let bgcolor = DarkLight ? "white" : "transparent";
-// console.log(top)
+
 useEffect(() => {
 
   

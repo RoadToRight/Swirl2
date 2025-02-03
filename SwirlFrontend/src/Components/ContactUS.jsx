@@ -41,7 +41,7 @@ const ContactUS = () => {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   const location = useLocation();
-  // console.log(location.state?.location)
+
   useEffect(() => {
     const handleResize = () => {
       setwindowidth(window.innerWidth);
@@ -62,8 +62,7 @@ const ContactUS = () => {
   }, [windowidth]);
 
   const handleToggleDropdown2 = (e) => {
-    // setIsOpen2(!isOpen2);
-    // console.log("1");
+
     e.stopPropagation();
     if (isOpen) {
       setIsOpen(false);
@@ -75,8 +74,8 @@ const ContactUS = () => {
 
   const handleSelectOption2 = (value) => {
     setSelectedOption2(value);
-    setIsOpen2(false); // Close dropdown after selection
-    // console.log(value);
+    setIsOpen2(false);
+
     if (!value) {
       setSelect2Error("Please Select An Option");
     } else {
@@ -84,7 +83,7 @@ const ContactUS = () => {
     }
   };
   const handleToggleDropdown = (e) => {
-    // console.log("2");
+
     e.stopPropagation();
     if (isOpen2) {
       setIsOpen(true);
@@ -96,8 +95,8 @@ const ContactUS = () => {
 
   const handleSelectOption = (value) => {
     setSelectedOption(value);
-    setIsOpen(false); // Close dropdown after selection
-    // console.log(value);
+    setIsOpen(false); 
+
     if (!value) {
       setSelect2Error("Please Select An Option");
     } else {
@@ -106,7 +105,7 @@ const ContactUS = () => {
   };
 
   const settingEmail = (value) => {
-    // console.log(value);
+  
     setEmail(value);
     if (emailRegex.test(value)) {
       setErrorMessage("");
@@ -150,14 +149,13 @@ const ContactUS = () => {
   };
 
   const finalSubmit = async () => {
-    // console.log(name, email, commentt);
-    // console.log("response")
+
     if (
       name === "Correct" &&
       email === "Correct" &&
       commentt === "Correct" &&
       select === "Correct"
-      // checkbox === "Correct"
+ 
     ) {
    
       try {
@@ -645,18 +643,6 @@ const ContactUSdiv = styled.div`
     backdrop-filter: blur(10px);
     background-color: transparent !important;
   }
-  /* .button-load{
-    width: 515px;
-    @media (max-width:1260px) {
-      width: 475px;
-    }
-    @media (max-width:1075px) {
-      width: 445px;
-    }
-    @media (max-width:992px) {
-      width: 100%;
-    }
-  } */
   .ball {
     @media (max-width: 992px) {
       top: 120%;

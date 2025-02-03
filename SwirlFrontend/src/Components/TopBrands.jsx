@@ -10,7 +10,7 @@ import Context1 from '../Context/Context1';
 const TopBrands = () => {
 
 
-  const {DarkLight  } = useContext(Context1)
+  const {DarkLight} = useContext(Context1)
 
   let Textcolor = DarkLight ? "black" : "white" ;
     const [brandsAnimation, setbrandsAnimation] = useState(false)
