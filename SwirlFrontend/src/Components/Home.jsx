@@ -30,7 +30,7 @@ const Home = () => {
           />
           Sorry, your browser doesn't support embedded videos.
         </video>
-
+ 
 
         <div className="background"></div>
         <div className="text z-1 absolute flex justify-center items-center w-full h-full">

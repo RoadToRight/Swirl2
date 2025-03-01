@@ -14,8 +14,8 @@ const Circle = () => {
 
   let Textcolor = DarkLight ? "black" : "white";
   let Logo = DarkLight
-    ? "/Project IMG/navblack-wtbg.png"
-    : "/Project IMG/Layer_8.png";
+    ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776207/navblack-wtbg_zymnvu.png"
+    : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776266/Layer_8_r5zyzs.png";
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -109,7 +109,7 @@ const Circle = () => {
                   Motion Graphics
                 </div>
                 <img
-                  src="/Project IMG/img1(2).png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740776433/img1_2_tuuq4b.png"
                   alt=""
                   className="first-circle z-1 w-[145px] circle"
                   style={{
@@ -137,7 +137,7 @@ const Circle = () => {
                   Character Animation
                 </div>
                 <img
-                  src="/Project IMG/Compassion Video.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png"
                   alt=""
                   className="first-circle z-1 w-[145px]"
                   style={{
@@ -164,7 +164,7 @@ const Circle = () => {
                   Isometric
                 </div>
                 <img
-                  src="/Project IMG/darkpurple2.webp"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772037/darkpurple2_yqatkj.webp"
                   alt=""
                   className="first-circle z-1 w-[145px]"
                   style={{
@@ -192,7 +192,7 @@ const Circle = () => {
                   Whiteboard Video
                 </div>
                 <img
-                  src="/Project IMG/white.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740774333/white_krh4vq.png"
                   alt=""
                   className="first-circle z-1 w-[145px]"
                   style={{
@@ -207,9 +207,9 @@ const Circle = () => {
                 alt=""
                 className="absolute z-1 circleLogo w-[150px]"
               />
-              <img src="/Project IMG/circle.png" alt="" className="absolute" />
+              <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740776513/circle_ekbrla.png" alt="" className="absolute" />
               <img
-                src="/Project IMG/ball.png"
+                src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png"
                 alt=""
                 className="absolute ball"
               />

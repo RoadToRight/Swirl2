@@ -13,7 +13,7 @@ const Aboutus = () => {
   return (
     <AboutDiv className={`bg-${bgcolor}`}>
       <div className="ball absolute right-0 top-6">
-        <img src="/Project IMG/ball.png" alt="" />
+        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
       </div>
       <div className="text container text-center">
         <div className={`head-top leading-[57.6px] font-bold text-[38px] text-${Textcolor}`}>We make videos that bring companies to life</div>
@@ -33,13 +33,13 @@ const Aboutus = () => {
           </div>
 
           <div className="right1 flex justify-center items-center">
-            <img src="/Project IMG/darkpurple2.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772037/darkpurple2_yqatkj.webp" alt="" />
           </div>
 
         </div>
         <div className="sec2">
           <div className="right2 flex justify-center items-center">
-            <img src="/Project IMG/about2.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772078/about2_odyzpe.webp" alt="" />
           </div>
           <div className="left2 left flex justify-center  flex-col">
             <div className={`head font-bold leading-[48px] text-${Textcolor}`}>Our Story</div>
@@ -58,7 +58,7 @@ export default Aboutus;
 
 const AboutDiv = styled.div`
 
-background-image: url("/Project IMG/contactbg.webp");
+background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740772123/contactbg_azdckc.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

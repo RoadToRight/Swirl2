@@ -305,7 +305,7 @@ const ContactUS = () => {
   return (
     <ContactUSdiv className={`bg-${bgcolor}`} onClick={ContactClick}>
       <div className="ball absolute right-0 top-28">
-        <img src="/Project IMG/ball.png" alt="" />
+        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
       </div>
       <div className="text flex flex-col container items-center gap-3 mt-3">
         <div
@@ -619,7 +619,7 @@ const ContactUS = () => {
 export default ContactUS;
 
 const ContactUSdiv = styled.div`
-  background-image: url("/Project IMG/contactbg.webp");
+  background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740772123/contactbg_azdckc.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

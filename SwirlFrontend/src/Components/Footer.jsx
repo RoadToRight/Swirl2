@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="Footer-Sections-5">
         <div className="Logo">
           <div>
-            <img src="/Project IMG/swirl logo footer.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777435/swirl_logo_footer_wdiopm.png" alt="" />
           </div>
           <br />
           <small className="text-lightgrey font-normal leading-[24px] text-[14px]">

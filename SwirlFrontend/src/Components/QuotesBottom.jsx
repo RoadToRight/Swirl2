@@ -43,10 +43,10 @@ const QuotesBottom = () => {
 
         <div className="cards">
           <Cards
-            img={"/Project IMG/3 cards 1.png"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776765/3_cards_1_xzeqwv.png"}
             title={"Adam Harder"}
             text={"Senior Video Operations Manager"}
-            img2={"/Project IMG/3 cards 1(2).png"}
+            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776861/3_cards_1_2_k1lz5i.png"}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }
@@ -54,10 +54,10 @@ const QuotesBottom = () => {
           />
 
           <Cards
-            img={"/Project IMG/3 cards 1.png"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776765/3_cards_1_xzeqwv.png"}
             title={"Shonal Narayan"}
             text={"Marketing Manager"}
-            img2={"/Project IMG/3 cards 1(2).png"}
+            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776861/3_cards_1_2_k1lz5i.png"}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }
@@ -65,10 +65,10 @@ const QuotesBottom = () => {
           />
 
           <Cards
-            img={"/Project IMG/3 cards 1.png"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776433/img1_2_tuuq4b.png"}
             title={"Ron Schniedermann"}
             text={"CEO"}
-            img2={"/Project IMG/3 cards 1(2).png"}
+            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776861/3_cards_1_2_k1lz5i.png"}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }

@@ -11,30 +11,32 @@ import Context1 from "../Context/Context1";
 import { Link } from "react-router-dom";
 
 let images1 = [
-  "/Project IMG/trust quay.png",
-  "/Project IMG/rixius.png",
-  "/Project IMG/quickvila.png",
-  "/Project IMG/westermann.png",
-  "/Project IMG/zoomprop.png",
-  "/Project IMG/straw boss.png",
-  "/Project IMG/website.png",
-  "/Project IMG/recycle.png",
-  "/Project IMG/trust quay.png",
-  "/Project IMG/rixius.png",
-  "/Project IMG/quickvila.png",
-  "/Project IMG/westermann.png",
-  "/Project IMG/zoomprop.png",
-  "/Project IMG/straw boss.png",
-  "/Project IMG/website.png",
-  "/Project IMG/recycle.png",
-  "/Project IMG/trust quay.png",
-  "/Project IMG/rixius.png",
-  "/Project IMG/quickvila.png",
-  "/Project IMG/westermann.png",
-  "/Project IMG/zoomprop.png",
-  "/Project IMG/straw boss.png",
-  "/Project IMG/website.png",
-  "/Project IMG/recycle.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773911/trust_quay_b14rdl.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773924/rixius_csipoz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773929/quickvila_vvolj2.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773935/westermann_im7oc4.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773943/zoomprop_fklgld.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773948/straw_boss_ho1znu.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773956/website_kl4ybk.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773970/recycle_xwgoyj.png",
+
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773911/trust_quay_b14rdl.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773924/rixius_csipoz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773929/quickvila_vvolj2.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773935/westermann_im7oc4.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773943/zoomprop_fklgld.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773948/straw_boss_ho1znu.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773956/website_kl4ybk.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773970/recycle_xwgoyj.png",
+
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773911/trust_quay_b14rdl.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773924/rixius_csipoz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773929/quickvila_vvolj2.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773935/westermann_im7oc4.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773943/zoomprop_fklgld.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773948/straw_boss_ho1znu.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773956/website_kl4ybk.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773970/recycle_xwgoyj.png",
 ];
 let images1Url = [
   "https://www.youtube.com/embed/-wJjmguH_oU?si=ENmbCOaV95tCjQXw",
@@ -65,44 +67,44 @@ let images1Url = [
   "https://www.youtube.com/embed/0MoCR68sqJQ?si=4SYBEUHc0BfGulHH",
 ];
 let images2 = [
-  "/Project IMG/extentfiles.png",
-  "/Project IMG/uncle.png",
-  "/Project IMG/tag.png",
-  "/Project IMG/Compassion Video.png",
-  "/Project IMG/ai.png",
-  "/Project IMG/zycada.png",
-  "/Project IMG/tiger finance.png",
-  "/Project IMG/northpoint.png",
-  "/Project IMG/commitment.png",
-  "/Project IMG/sprinto.png",
-  "/Project IMG/game.png",
-  "/Project IMG/Haive.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774148/extentfiles_bssewz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774164/uncle_tpiwbz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774178/tag_bylaxt.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774208/ai_ylsmch.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774218/zycada_xaryqn.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774224/tiger_finance_yfolqb.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774230/northpoint_gxcdly.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774236/commitment_lv7p3u.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774243/sprinto_hhykcw.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774248/game_waqvxh.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774255/Haive_vmauxu.png",
 
-  "/Project IMG/extentfiles.png",
-  "/Project IMG/uncle.png",
-  "/Project IMG/tag.png",
-  "/Project IMG/Compassion Video.png",
-  "/Project IMG/ai.png",
-  "/Project IMG/zycada.png",
-  "/Project IMG/tiger finance.png",
-  "/Project IMG/northpoint.png",
-  "/Project IMG/commitment.png",
-  "/Project IMG/sprinto.png",
-  "/Project IMG/game.png",
-  "/Project IMG/Haive.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774148/extentfiles_bssewz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774164/uncle_tpiwbz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774178/tag_bylaxt.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774208/ai_ylsmch.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774218/zycada_xaryqn.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774224/tiger_finance_yfolqb.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774230/northpoint_gxcdly.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774236/commitment_lv7p3u.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774243/sprinto_hhykcw.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774248/game_waqvxh.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774255/Haive_vmauxu.png",
 
-  "/Project IMG/extentfiles.png",
-  "/Project IMG/uncle.png",
-  "/Project IMG/tag.png",
-  "/Project IMG/Compassion Video.png",
-  "/Project IMG/ai.png",
-  "/Project IMG/zycada.png",
-  "/Project IMG/tiger finance.png",
-  "/Project IMG/northpoint.png",
-  "/Project IMG/commitment.png",
-  "/Project IMG/sprinto.png",
-  "/Project IMG/game.png",
-  "/Project IMG/Haive.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774148/extentfiles_bssewz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774164/uncle_tpiwbz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774178/tag_bylaxt.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774208/ai_ylsmch.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774218/zycada_xaryqn.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774224/tiger_finance_yfolqb.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774230/northpoint_gxcdly.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774236/commitment_lv7p3u.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774243/sprinto_hhykcw.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774248/game_waqvxh.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774255/Haive_vmauxu.png",
 ];
 let images2Url = [
   "https://www.youtube.com/embed/_R0AEQCs_-w?si=XsGZLsA17JMPFQgv",
@@ -145,38 +147,38 @@ let images2Url = [
   "https://www.youtube.com/embed/kncsl7USwPs?si=n6qgynph9-0MWCdk",
 ];
 let images3 = [
-  "/Project IMG/white.png",
-  "/Project IMG/store.png",
-  "/Project IMG/pet.png",
-  "/Project IMG/zen market.png",
-  "/Project IMG/burners.png",
-  "/Project IMG/olx.png",
-  "/Project IMG/cyber.png",
-  "/Project IMG/property.png",
-  "/Project IMG/promise.png",
-  "/Project IMG/health.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774333/white_krh4vq.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774338/store_auzlhn.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774344/pet_jo9rfr.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774353/zen_market_aakdgq.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774356/burners_u6tr01.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774361/olx_jei3si.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774367/cyber_zistaz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774374/property_icrbhl.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774380/promise_yora7b.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774386/health_sk1ubh.png",
 
-  "/Project IMG/white.png",
-  "/Project IMG/store.png",
-  "/Project IMG/pet.png",
-  "/Project IMG/zen market.png",
-  "/Project IMG/burners.png",
-  "/Project IMG/olx.png",
-  "/Project IMG/cyber.png",
-  "/Project IMG/property.png",
-  "/Project IMG/promise.png",
-  "/Project IMG/health.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774333/white_krh4vq.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774338/store_auzlhn.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774344/pet_jo9rfr.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774353/zen_market_aakdgq.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774356/burners_u6tr01.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774361/olx_jei3si.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774367/cyber_zistaz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774374/property_icrbhl.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774380/promise_yora7b.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774386/health_sk1ubh.png",
 
-  "/Project IMG/white.png",
-  "/Project IMG/store.png",
-  "/Project IMG/pet.png",
-  "/Project IMG/zen market.png",
-  "/Project IMG/burners.png",
-  "/Project IMG/olx.png",
-  "/Project IMG/cyber.png",
-  "/Project IMG/property.png",
-  "/Project IMG/promise.png",
-  "/Project IMG/health.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774333/white_krh4vq.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774338/store_auzlhn.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774344/pet_jo9rfr.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774353/zen_market_aakdgq.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774356/burners_u6tr01.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774361/olx_jei3si.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774367/cyber_zistaz.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774374/property_icrbhl.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774380/promise_yora7b.png",
+  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774386/health_sk1ubh.png",
 ];
 let images3Url = [
   "https://www.youtube.com/embed/qextxBCf1tg?si=MDO23N3WRaUSRWvu",
@@ -377,7 +379,7 @@ useEffect(() => {
       >
         {images2.map((x, index) => {
           return (
-            <div className="relative flex-shrink-0 img2-parent rounded-lg">
+            <div className="relative flex-shrink-0 img2-parent rounded-lg" key={index}>
               <FaPlay
                 className={`play  text-[60px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer flex-shrink-0`}
                 onClick={() => {
@@ -400,7 +402,7 @@ useEffect(() => {
       <div className="sec3-parent flex gap-4 w-full relative" ref={SmallImg}>
         {images3.map((x, index) => {
           return (
-            <div className="relative flex-shrink-0 img2-parent rounded-lg">
+            <div className="relative flex-shrink-0 img2-parent rounded-lg" key={index}>
               <FaPlay
                 className={`play  text-[60px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer flex-shrink-0`}
                 onClick={() => {
@@ -442,7 +444,7 @@ useEffect(() => {
 export default ImgSlider;
 
 const SliderDiv = styled.div`
-  background-image: url("/Project IMG/Sliderbg.webp");
+  background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740776579/Sliderbg_ggsnra.webp");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;

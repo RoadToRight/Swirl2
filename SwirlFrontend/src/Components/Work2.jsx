@@ -288,27 +288,27 @@ useEffect(() => {
       {/* Ball  */}
    
       <div className="ball absolute left-0 top-28">
-        <img src="/Project IMG/ball.png" alt="" />
+        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
       </div>
       <div className="ball-right absolute right-0 top-28">
-        <img src="/Project IMG/ball.png" alt="" />
+        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
       </div>
 
       {TypeOfVideoToPrint === "All" ? (
         balls?.map((x) => {
           return (
             <div className={`${x.class} absolute ${x.align} ${x.top}`}>
-              <img src="/Project IMG/ball.png" alt="" />
+              <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
             </div>
           );
         })
       ) : (
         <div>
           <div className="ball2 absolute right-36 top-[100%]">
-            <img src="/Project IMG/ball.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
           </div>
           <div className="ball2 absolute left-26 top-[120%]">
-            <img src="/Project IMG/ball.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
           </div>
         </div>
       )}
@@ -715,6 +715,7 @@ useEffect(() => {
                   }}
                 >
                   <img
+                  
                     src={`${x.poster}`}
                     alt=""
                     className={`w-[1120px] h-[470px]`}

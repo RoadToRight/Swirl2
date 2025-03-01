@@ -52,7 +52,7 @@ const Quotes = () => {
     <div className="sec-1 flex flex-col gap-8">
     <div className={`Rectangle Rectangle-sec-1 ${bgcolor} w-[340px] relative p-4 rounded-3xl h-[435px]`}>
           <img
-            src={DarkLight ? "/Project IMG/Vector.png" : "/Project IMG/Vectordark.png"}
+            src={DarkLight ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777010/Vector_j46dlz.png" : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777027/Vectordark_v5tzjd.png"}
             alt=""
             className="w-24 h-22 absolute top-5 left-5 img"
           />
@@ -67,7 +67,7 @@ const Quotes = () => {
           <br />
           <br />
           <img
-            src="/Project IMG/quoteimg1.png"
+            src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777053/quoteimg1_acihom.png"
             alt=""
             className="relative z-1 -left-2"
           />
@@ -75,7 +75,7 @@ const Quotes = () => {
         </div>
         <div className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}>
           <img
-            src={DarkLight ? "/Project IMG/Vector.png" : "/Project IMG/Vectordark.png"}
+            src={DarkLight ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777010/Vector_j46dlz.png"  : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777027/Vectordark_v5tzjd.png"}
             alt=""
             className="w-24 h-22 absolute top-5 left-5 img"
           />
@@ -86,7 +86,7 @@ const Quotes = () => {
           <br />
           <div className="flex items-center pl-3">
             <img
-              src="/Project IMG/q4.png"
+              src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777116/q4_epu8a9.png"
               alt=""
               className="relative z-1 -left-2"
             />
@@ -99,7 +99,7 @@ const Quotes = () => {
         <div className="sec-2 flex flex-col gap-4">
           <div className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}>
             <img
-              src={DarkLight ? "/Project IMG/Vector.png" : "/Project IMG/Vectordark.png"}
+              src={DarkLight ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777010/Vector_j46dlz.png"  : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777027/Vectordark_v5tzjd.png"}
               alt=""
               className="w-24 h-22 absolute top-5 left-5 img "
             />
@@ -109,14 +109,14 @@ const Quotes = () => {
             </div>
             <br />
             <img
-              src="/Project IMG/q2.png"
+              src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777139/q2_v3ey26.png"
               alt=""
               className="relative z-1 -left-2 "
             />
           </div>
           <div className={`Rectangle ${bgcolor}  w-[340px] relative p-4 rounded-3xl`}>
             <img
-              src={DarkLight ? "/Project IMG/Vector.png" : "/Project IMG/Vectordark.png"}
+              src={DarkLight ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777010/Vector_j46dlz.png"  : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777027/Vectordark_v5tzjd.png"}
               alt=""
               className="w-24 h-22 absolute top-5 left-5 img"
             />
@@ -126,7 +126,7 @@ const Quotes = () => {
             </div>
             <br />
             <img
-              src="/Project IMG/q3.png"
+              src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777163/q3_kdkzbs.png"
               alt=""
               className="relative z-1 -left-2"
             />
@@ -135,7 +135,7 @@ const Quotes = () => {
 
           <div className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}>
             <img
-              src={DarkLight ? "/Project IMG/Vector.png" : "/Project IMG/Vectordark.png"}
+              src={DarkLight ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777010/Vector_j46dlz.png"  : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777027/Vectordark_v5tzjd.png"}
               alt=""
               className="w-24 h-22 absolute top-5 left-5 img"
             />
@@ -147,7 +147,7 @@ const Quotes = () => {
             <br />
             <div className="flex tems-center pl-3">
             <img
-              src="/Project IMG/q5.png"
+              src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777186/q5_aiwlwl.png"
               alt=""
               className="relative z-1 -left-2"
             />
@@ -160,7 +160,7 @@ const Quotes = () => {
     <div className="sec-3">
     <div className={`Rectangle2 ${bgcolor} w-[430px] relative p-4 rounded-3xl`}>
             <img
-              src={DarkLight ? "/Project IMG/Vector.png" : "/Project IMG/Vectordark.png"}
+              src={DarkLight ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777010/Vector_j46dlz.png"  : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740777027/Vectordark_v5tzjd.png"}
               alt=""
               className="w-24 h-22 absolute top-5 left-5 img"
             />
@@ -172,7 +172,7 @@ const Quotes = () => {
             <br />
             <div className="flex items-center pl-3">
             <img
-              src="/Project IMG/q6.png"
+              src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777208/q6_iaf3dj.png"
               alt=""
               className="relative z-1 -left-2"
             />

@@ -54,7 +54,7 @@ export default Stats;
 
 const StatsDiv = styled.div`
 
- background-image: url("/Project IMG/statsbg.webp");
+ background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740776663/statsbg_azbj3o.webp");
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: center center;

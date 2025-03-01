@@ -61,27 +61,27 @@ const Cards = ({ img, title, text, img2, text2, url }) => {
           <div className="flex ml-4 py-2">
             <Card.Img
               variant="top"
-              src={`/Project IMG/Star.png`}
+              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1740776898/Star_i500no.png`}
               style={{ width: "21px", height: "21px" }}
             />
             <Card.Img
               variant="top"
-              src={`/Project IMG/Star.png`}
+              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1740776898/Star_i500no.png`}
               style={{ width: "21px", height: "21px" }}
             />
             <Card.Img
               variant="top"
-              src={`/Project IMG/Star.png`}
+              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1740776898/Star_i500no.png`}
               style={{ width: "21px", height: "21px" }}
             />
             <Card.Img
               variant="top"
-              src={`/Project IMG/Star.png`}
+              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1740776898/Star_i500no.png`}
               style={{ width: "21px", height: "21px" }}
             />
             <Card.Img
               variant="top"
-              src={`/Project IMG/Star.png`}
+              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1740776898/Star_i500no.png`}
               style={{ width: "21px", height: "21px" }}
             />
           </div>

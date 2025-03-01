@@ -20,8 +20,8 @@ const Navigation = ({ DarkLight, setDarkLight }) => {
   let Navigate = useNavigate();
   let logo =
     DarkLight && scrolled
-      ? "/Project IMG/navblack-wtbg.png"
-      : "/Project IMG/Layer_8.png";
+      ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776207/navblack-wtbg_zymnvu.png"
+      : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776266/Layer_8_r5zyzs.png";
 
       // "/Project IMG/navblack.jpg"
       let shadow =

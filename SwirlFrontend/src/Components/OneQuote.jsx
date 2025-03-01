@@ -29,33 +29,33 @@ let Data = [
           is exceptional work, always punctual, and open to any proposal for
           improvement. Without a doubt, my trusted agency for these jobs.
           1,000% recommended.”`,
-    logo:"/Project IMG/darguba2.png",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777282/Quote2_huzvx1.png",
     logoText:"Dargubra"
   },
   {
     Quote:`  “Very professional. Very patient. Amazing job.”`,
-    logo:"/Project IMG/Quote2.png",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777282/Quote2_huzvx1.png",
     logoText:"Eric"
   },
   {
     Quote:`  “Great to work on a project again. Quality you can depend on.”`,
-    logo:"/Project IMG/Quote3.png",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777286/Quote3_ajzygi.png",
     logoText:"Martin"
   },
   {
     Quote:`  “Exceptional work. Always delivered on time and with good communication. Did all of his work custom made. Highly recommend Swirl365”`,
-    logo:"/Project IMG/Quote4.png",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777290/Quote4_zni6ng.webp",
     logoText:"niffostudios's"
   }
 ]
 
 const handleClick = () => {
-  // gsap.from(DataAnime.current, {
-  //   x: -60,  // Start from 60px left of the element's initial position
-  //   opacity: 0,  // Start from 0 opacity
-  //   duration: 1.5,  // Adjusted duration for smoother animation
-  //   ease: 'power3.out',  // Easing function to smooth the transition
-  // });
+  gsap.from(DataAnime.current, {
+    x: -60,  // Start from 60px left of the element's initial position
+    opacity: 0,  // Start from 0 opacity
+    duration: 1.5,  // Adjusted duration for smoother animation
+    ease: 'power3.out',  // Easing function to smooth the transition
+  });
 };
 
 

@@ -73,10 +73,10 @@ const Pricing = () => {
         </div>
       ) : null}
       <div className="imgDiv absolute balldiv">
-        <img src="/Project IMG/ball.png" alt="" />
+        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
       </div>
       <div className="imgDiv absolute balldiv2">
-        <img src="/Project IMG/ball.png" alt="" />
+        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
       </div>
       <div className="text flex flex-col items-center justify-center">
         <div
@@ -212,9 +212,9 @@ const Pricing = () => {
 
             <div className="images mt-2 flex gap-2 relative">
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777634/pricingex1_ltg6ai.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -227,9 +227,9 @@ const Pricing = () => {
                 />
               </div>
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777562/pricingex3_gg1oor.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -242,9 +242,9 @@ const Pricing = () => {
                 />
               </div>
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777639/pricingex2_i8kgwz.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -341,9 +341,9 @@ const Pricing = () => {
 
             <div className="images mt-2 flex gap-2 relative">
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777634/pricingex1_ltg6ai.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -356,9 +356,9 @@ const Pricing = () => {
                 />
               </div>
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777562/pricingex3_gg1oor.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -371,9 +371,9 @@ const Pricing = () => {
                 />
               </div>
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777639/pricingex2_i8kgwz.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -488,9 +488,9 @@ const Pricing = () => {
 
             <div className="images mt-2 flex gap-2 relative">
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777634/pricingex1_ltg6ai.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -503,9 +503,9 @@ const Pricing = () => {
                 />
               </div>
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777562/pricingex3_gg1oor.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -518,9 +518,9 @@ const Pricing = () => {
                 />
               </div>
               <div>
-                <img src="/Project IMG/pricingex1.png" alt="" />
+                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777639/pricingex2_i8kgwz.png" alt="" />
                 <img
-                  src="/Project IMG/pricingexplay.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777587/pricingexplay_xk1vti.png"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
@@ -583,7 +583,7 @@ const Pricing = () => {
 export default Pricing;
 
 const PricingDiv = styled.div`
-  background-image: url("/Project IMG/pricingbg2.webp");
+  background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740773415/pricingbg2_dt0bko.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -719,7 +719,7 @@ const PricingDiv = styled.div`
     background: transparent;
   }
   .custom-crafted {
-    background-image: url("/Project IMG/customcraft.webp");
+    background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740773495/customcraft_zq7gy9.webp");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

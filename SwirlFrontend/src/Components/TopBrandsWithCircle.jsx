@@ -91,40 +91,40 @@ useEffect(() => {
         <div className="logos mt-6" ref={top}>
           <div className="img-div"
           >
-            <img src="/Project IMG/top1.png" alt="" />
-            <img src="/Project IMG/top2.png" alt="" />
-            <img src="/Project IMG/top3.png" alt="" />
-            <img src="/Project IMG/top4.png" alt="" />
-            <img src="/Project IMG/top6.png" alt=""  />
-            <img src="/Project IMG/top9.png" alt="" />
-            <img src="/Project IMG/top7.png" alt="" />
-            <img src="/Project IMG/top8.png" alt="" />
-            <img src="/Project IMG/top5.png" alt="" />
+                     <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773545/top1_apx3w4.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top2_thfojz.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773546/top3_foz0je.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773548/top4_tjf6iu.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top6_dw0ukt.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top9_c4gxur.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773544/top7_i0gcac.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top8_p7lses.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top5_b78je6.png" alt="" />
             
           </div>
           {brandsAnimation ? <>
             <div className="img-div">
-            <img src="/Project IMG/top1.png" alt="" />
-            <img src="/Project IMG/top2.png" alt="" />
-            <img src="/Project IMG/top3.png" alt="" />
-            <img src="/Project IMG/top4.png" alt="" />
-            <img src="/Project IMG/top6.png" alt="" />
-            <img src="/Project IMG/top9.png" alt="" />
-            <img src="/Project IMG/top7.png" alt="" />
-            <img src="/Project IMG/top8.png" alt="" />
-            <img src="/Project IMG/top5.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773545/top1_apx3w4.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top2_thfojz.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773546/top3_foz0je.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773548/top4_tjf6iu.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top6_dw0ukt.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top9_c4gxur.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773544/top7_i0gcac.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top8_p7lses.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top5_b78je6.png" alt="" />
           </div>
           
           <div className="img-div">
-            <img src="/Project IMG/top1.png" alt="" />
-            <img src="/Project IMG/top2.png" alt="" />
-            <img src="/Project IMG/top3.png" alt="" />
-            <img src="/Project IMG/top4.png" alt="" />
-            <img src="/Project IMG/top6.png" alt="" />
-            <img src="/Project IMG/top9.png" alt="" />
-            <img src="/Project IMG/top7.png" alt="" />
-            <img src="/Project IMG/top8.png" alt="" />
-            <img src="/Project IMG/top5.png" alt="" />
+          <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773545/top1_apx3w4.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top2_thfojz.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773546/top3_foz0je.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773548/top4_tjf6iu.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top6_dw0ukt.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top9_c4gxur.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773544/top7_i0gcac.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top8_p7lses.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top5_b78je6.png" alt="" />
           </div>
           </> : null}
         

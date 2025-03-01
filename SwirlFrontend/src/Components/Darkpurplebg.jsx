@@ -47,7 +47,7 @@ const Darkpurplebg = () => {
       <div className=" ">
         <div className="img ">
           <img
-            src="/Project IMG/darkpurple2.webp"
+            src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772037/darkpurple2_yqatkj.webp"
             alt=""
             className="img-fluid"
           />
@@ -88,7 +88,7 @@ export default Darkpurplebg;
 
 const DarkPurplediv = styled.div`
   min-height: 662px;
-  background-image: url("/Project IMG/darkpurplebg.webp");
+  background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740776624/darkpurplebg_bqx1ws.webp");
   background-repeat: no-repeat;
   box-sizing: border-box;
 
