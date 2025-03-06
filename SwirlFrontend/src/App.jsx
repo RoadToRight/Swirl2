@@ -1,18 +1,22 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, useEffect, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
 import Footer from "./Components/Footer";
+// let Footer = lazy(() => import("./Components/Footer"))
 import DoYouHaveQues from "./Components/DoYouHaveQues";
 import QuotesBottom from "./Components/QuotesBottom";
 import Quotes from "./Components/Quotes";
 import Darkpurplebg from "./Components/Darkpurplebg";
 import Stats from "./Components/Stats";
+// let Stats = lazy(() => import("./Components/Stats"))
 import ReadyTomakeVideo from "./Components/ReadyTomakeVideo";
 import Pricing from "./Components/Pricing";
 import OneQuote from "./Components/OneQuote";
 import ContactUS from "./Components/ContactUS";
+// let ContactUS = lazy(() => import("./Components/ContactUS"))
 import Aboutus from "./Components/Aboutus";
+// let Aboutus = lazy(() => import("./Components/Aboutus"))
 import Circle from "./Components/Circle";
 import Threebenefits from "./Components/Threebenefits";
 import TopBrands from "./Components/TopBrands";
@@ -26,15 +30,9 @@ import Scroll from "./Components/ScrollIndicator.jsx";
 import Loader from "./Components/Loader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import { IoCloseOutline } from "react-icons/io5";
 import styled from "styled-components";
 import Work2 from "./Components/Work2.jsx";
-
-
-// gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const [DarkLight, setDarkLight] = useState(true);
@@ -45,8 +43,8 @@ function App() {
   const location = useLocation();
   const [windowidth, setwindowidth] = useState(window.innerWidth);
   const [SwapQuotes, setSwapQuotes] = useState(false);
-const [SlideLoad, setSlideLoad] = useState(true)
-    const [loading2, setloading2] = useState(true)
+  const [SlideLoad, setSlideLoad] = useState(true);
+  const [loading2, setloading2] = useState(true);
   let Testinomials = useRef(null);
   let ProjectSlider = useRef(null);
   let Tracker = useRef(null);
@@ -56,8 +54,6 @@ const [SlideLoad, setSlideLoad] = useState(true)
     setYoutubeVideo((props) => !props);
   };
 
-
-  
   useEffect(() => {
     // Change the document title based on the current route
     if (location.pathname === "/") {
@@ -79,11 +75,8 @@ const [SlideLoad, setSlideLoad] = useState(true)
     // setLoading(true);
 
     setTimeout(() => {
-      
-      if(location.pathname === "/"){
-       
-        if(true){
-   
+      if (location.pathname === "/") {
+        if (true) {
           if (document.readyState === "complete") {
             setLoading(false); // If the page is already fully loaded, hide the loader
           } else {
@@ -96,8 +89,7 @@ const [SlideLoad, setSlideLoad] = useState(true)
             };
           }
         }
-      }
-      else{
+      } else {
         if (document.readyState === "complete") {
           setLoading(false); // If the page is already fully loaded, hide the loader
         } else {
@@ -116,19 +108,19 @@ const [SlideLoad, setSlideLoad] = useState(true)
   useEffect(() => {
     // setloading2(false)
 
-    let creationspath = location.pathname.split("/").find((x) => x === "creations");
+    let creationspath = location.pathname
+      .split("/")
+      .find((x) => x === "creations");
     // console.log(creationspath, loading2);
-    if(creationspath !== "creations"){
-      setloading2(false)
+    if (creationspath !== "creations") {
+      setloading2(false);
     }
     if (loading || (loading2 && creationspath === "creations")) {
-        document.body.style.overflow = "hidden"; // Prevent scrolling when loading
+      document.body.style.overflow = "hidden"; // Prevent scrolling when loading
     } else {
-        document.body.style.overflow = "auto"; // Allow scrolling when loading is finished
+      document.body.style.overflow = "auto"; // Allow scrolling when loading is finished
     }
-
-}, [loading, loading2,location]);
-
+  }, [loading, loading2, location]);
 
   const scrollToElement = (id) => {
     let elementToScroll = null; // Initialize to null
@@ -180,7 +172,6 @@ const [SlideLoad, setSlideLoad] = useState(true)
   // console.log(SwapQuotes);
   useEffect(() => {
     if (windowidth <= 725) {
-
       setSwapQuotes(true);
     } else {
       setSwapQuotes(false);
@@ -210,7 +201,7 @@ const [SlideLoad, setSlideLoad] = useState(true)
 
       {loading && <Loader />}
       {/* <Loader /> */}
-      <Scroll/>
+      <Scroll />
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -242,9 +233,11 @@ const [SlideLoad, setSlideLoad] = useState(true)
           Tracker,
           Questions,
           loading2,
-           setloading2,
-           isVideoLoaded, setIsVideoLoaded,
-           SlideLoad, setSlideLoad
+          setloading2,
+          isVideoLoaded,
+          setIsVideoLoaded,
+          SlideLoad,
+          setSlideLoad,
         }}
       >
         <Routes>
@@ -326,13 +319,13 @@ const [SlideLoad, setSlideLoad] = useState(true)
                   {!SwapQuotes ? (
                     <>
                       {" "}
-                      <Home /> <Circle /> <ImgSlider/> <Darkpurplebg />
+                      <Home /> <Circle /> <ImgSlider /> <Darkpurplebg />
                       <Quotes /> <Stats /> <QuotesBottom /> <DoYouHaveQues />{" "}
                     </>
                   ) : (
                     <>
                       {" "}
-                      <Home /> <Circle /> <ImgSlider/> <Darkpurplebg />
+                      <Home /> <Circle /> <ImgSlider /> <Darkpurplebg />
                       <Quotes /> <QuotesBottom />
                       <Stats /> <DoYouHaveQues />{" "}
                     </>

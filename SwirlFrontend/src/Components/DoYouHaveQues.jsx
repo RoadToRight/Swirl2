@@ -2,10 +2,6 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import AccordianCompo from "./Accordian";
 import Context1 from "../Context/Context1";
-// import { useGSAP } from '@gsap/react';
-// import {gsap} from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
 const DoYouHaveQues = () => {
 
   const { DarkLight } = useContext(Context1)

@@ -7,7 +7,7 @@ let Alldata = [
         text1: "Trust Quay",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773911/trust_quay_b14rdl.png"
+        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214482/trust_quay_y4nmch.webp"
       },
       {
         video:
@@ -15,7 +15,7 @@ let Alldata = [
         text1: "Rixius",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773924/rixius_csipoz.png"
+        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214467/rixius_deyas0.webp"
       },
 
       {
@@ -24,7 +24,7 @@ let Alldata = [
         text1: "Quick Vila",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773929/quickvila_vvolj2.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214482/quickvila_xxh55f.webp",
       },
 
 
@@ -39,7 +39,7 @@ let Alldata = [
         text1: "Zoom Prop",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773935/westermann_im7oc4.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214486/zoomprop_hw6uqk.webp",
       },
       {
         video:
@@ -47,7 +47,7 @@ let Alldata = [
         text1: "Westerman",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773943/zoomprop_fklgld.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/westermann_uvg3uw.webp",
       },
       {
         video:
@@ -55,7 +55,7 @@ let Alldata = [
         text1: "The Straw Boss",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773948/straw_boss_ho1znu.png",
+        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214472/straw_boss_vgx74p.webp",
       },
 
     ],
@@ -69,7 +69,7 @@ let Alldata = [
         text1: "Webilize",
         text2: "Next-gen audience intelligence",
         type: "SASS Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773956/website_kl4ybk.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/website_b8jogr.webp",
       },
       {
         video:
@@ -77,7 +77,7 @@ let Alldata = [
         text1: "Organic Recycling",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773970/recycle_xwgoyj.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214467/recycle_zgpe6o.webp",
       },
 
     ],
@@ -91,7 +91,7 @@ let Alldata = [
         text1: "Extend Tech",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774148/extentfiles_bssewz.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214489/extentfiles_srxvaq.webp",
       },
       {
         video:
@@ -99,7 +99,7 @@ let Alldata = [
         text1: "Olampia",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774164/uncle_tpiwbz.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214483/uncle_tz2us2.webp",
       },
       {
         video:
@@ -107,7 +107,7 @@ let Alldata = [
         text1: "Intent Connect",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774178/tag_bylaxt.png",
+        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214473/tag_ntktjh.webp",
       },
     ],
   },
@@ -120,7 +120,7 @@ let Alldata = [
         text1: "Compassion",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/Compassion_Video_av0lvl.webp",
       },
       {
         video:
@@ -128,7 +128,7 @@ let Alldata = [
         text1: "Mojo NaaS",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740774208/ai_ylsmch.png",
+        poster:"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214495/ai_iv0aip.webp",
       },
       {
         video:
@@ -136,7 +136,7 @@ let Alldata = [
         text1: "Zycada",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774218/zycada_xaryqn.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214487/zycada_cjhnxp.webp",
       },
     ],
   },
@@ -149,7 +149,7 @@ let Alldata = [
         text1: "Tiger Finance",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774224/tiger_finance_yfolqb.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214473/tiger_finance_jg3ulu.webp",
       },
       {
         video:
@@ -157,7 +157,7 @@ let Alldata = [
         text1: "North Point",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774230/northpoint_gxcdly.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/northpoint_ev2tma.webp",
       },
       {
         video:
@@ -165,7 +165,7 @@ let Alldata = [
         text1: "Commitment",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774236/commitment_lv7p3u.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214498/commitment_1_zx1rsv.webp",
       },
     ],
   },
@@ -178,7 +178,7 @@ let Alldata = [
         text1: "Sprinto",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774243/sprinto_hhykcw.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214469/sprinto_xeam6h.webp",
       },
       {
         video:
@@ -186,7 +186,7 @@ let Alldata = [
         text1: "Game Providers",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774248/game_waqvxh.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214489/game_kup6oi.webp",
       },
       {
         video:
@@ -194,7 +194,7 @@ let Alldata = [
         text1: "Haive",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774255/Haive_vmauxu.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214490/Haive_sel5ey.webp",
       },
       {
         video:
@@ -202,7 +202,7 @@ let Alldata = [
         text1: "Honey",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774333/white_krh4vq.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/white_fwbn6b.webp",
       },
 
 
@@ -218,7 +218,7 @@ let Alldata = [
         text1: "RDP Store",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774338/store_auzlhn.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214471/store_bzjkfi.webp",
       },
       {
         video:
@@ -226,7 +226,7 @@ let Alldata = [
         text1: "We Love Our Pets",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774344/pet_jo9rfr.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/pet_otcle1.webp",
       },
       {
         video:
@@ -234,7 +234,7 @@ let Alldata = [
         text1: "Zen Marketing",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774353/zen_market_aakdgq.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214485/zen_market_wbntst.webp",
       },
       {
         video:
@@ -242,7 +242,7 @@ let Alldata = [
         text1: "Burners",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774356/burners_u6tr01.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/burners_r4rvtm.webp",
       },
       {
         video:
@@ -250,7 +250,7 @@ let Alldata = [
         text1: "OLX",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774361/olx_jei3si.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/olx_rsc2lu.webp",
       },
       {
         video:
@@ -258,7 +258,7 @@ let Alldata = [
         text1: "Cyber X",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774367/cyber_zistaz.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214500/cyber_q0e52t.webp",
       },
 
     ]
@@ -273,7 +273,7 @@ let Alldata = [
         text1: "The Property Finance",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774374/property_icrbhl.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214461/property_wrspil.webp",
       },
       {
         video:
@@ -281,7 +281,7 @@ let Alldata = [
         text1: "Daddy Promise Foundation",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774380/promise_yora7b.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214461/promise_qgqcum.webp",
       },
       {
         video:
@@ -289,7 +289,7 @@ let Alldata = [
         text1: "Health Section",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774386/health_sk1ubh.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/health_vxkd5x.webp",
       },
     ]
   }
@@ -304,7 +304,7 @@ let data = [
         text1: "Quick Vila",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773929/quickvila_vvolj2.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214482/quickvila_xxh55f.webp",
       },
       {
         video:
@@ -312,7 +312,7 @@ let data = [
         text1: "The Straw Boss",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773948/straw_boss_ho1znu.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214472/straw_boss_vgx74p.webp",
       },
 
       {
@@ -321,7 +321,7 @@ let data = [
         text1: "Organic Recycling",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773970/recycle_xwgoyj.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214467/recycle_zgpe6o.webp",
       },
       {
         video:
@@ -329,7 +329,7 @@ let data = [
         text1: "TAG",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774178/tag_bylaxt.png",
+        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214473/tag_ntktjh.webp",
       },
       {
         video:
@@ -337,7 +337,7 @@ let data = [
         text1: "Compassion",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/Compassion_Video_av0lvl.webp",
       },
       {
         video:
@@ -345,7 +345,7 @@ let data = [
         text1: "Zycada",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774218/zycada_xaryqn.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214487/zycada_cjhnxp.webp",
       },
       {
         video:
@@ -353,7 +353,7 @@ let data = [
         text1: "Tiger Finance",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774224/tiger_finance_yfolqb.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214473/tiger_finance_jg3ulu.webp",
       },
       {
         video:
@@ -361,7 +361,7 @@ let data = [
         text1: "Commitment",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774236/commitment_lv7p3u.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214498/commitment_1_zx1rsv.webp",
       },
       {
         video:
@@ -369,7 +369,7 @@ let data = [
         text1: "North Point",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774230/northpoint_gxcdly.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/northpoint_ev2tma.webp",
       },
       {
      video:
@@ -377,7 +377,7 @@ let data = [
         text1: "Sprinto",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774243/sprinto_hhykcw.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214469/sprinto_xeam6h.webp",
       },
       {
         video:
@@ -385,7 +385,7 @@ let data = [
         text1: "Game Providers",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774248/game_waqvxh.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214489/game_kup6oi.webp",
       },
       {
         video:
@@ -393,7 +393,7 @@ let data = [
         text1: "Haive",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774255/Haive_vmauxu.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214490/Haive_sel5ey.webp",
       },
       {
         video:
@@ -401,7 +401,7 @@ let data = [
         text1: "We Love Our Pets",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774344/pet_jo9rfr.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/pet_otcle1.webp",
       },
       {
         video:
@@ -409,7 +409,7 @@ let data = [
         text1: "Burners",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774356/burners_u6tr01.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/burners_r4rvtm.webp",
       },
     ],
   },
@@ -422,7 +422,7 @@ let data = [
         text1: "Webilize",
         text2: "Next-gen audience intelligence",
         type: "SASS Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773956/website_kl4ybk.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/website_b8jogr.webp",
       },
       // {
       //   video:
@@ -451,7 +451,7 @@ let data = [
         text1: "Rixius",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773924/rixius_csipoz.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214467/rixius_deyas0.webp",
       },
       {
         video:
@@ -459,7 +459,7 @@ let data = [
         text1: "Zoom Prop",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773943/zoomprop_fklgld.png",
+        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/westermann_uvg3uw.webp",
       },
       {
         video:
@@ -467,7 +467,7 @@ let data = [
         text1: "Extend Tech",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774148/extentfiles_bssewz.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214489/extentfiles_srxvaq.webp",
       },
       {
         video:
@@ -475,7 +475,7 @@ let data = [
         text1: "TAG",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774178/tag_bylaxt.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214473/tag_ntktjh.webp",
       },
       {
         video:
@@ -483,7 +483,7 @@ let data = [
         text1: "Mojo Naaz",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774208/ai_ylsmch.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214495/ai_iv0aip.webp",
       },
       {
         video:
@@ -491,7 +491,7 @@ let data = [
            text1: "Sprinto",
            text2: "Next-gen audience intelligence",
            type: "Explainer Video",
-           poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774243/sprinto_hhykcw.png",
+           poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214469/sprinto_xeam6h.webp",
          },
          {
           video:
@@ -499,7 +499,7 @@ let data = [
           text1: "RDP Store",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774338/store_auzlhn.png",
+          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214471/store_bzjkfi.webp",
         },
         {
           video:
@@ -507,7 +507,7 @@ let data = [
           text1: "Zen Marketing",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774353/zen_market_aakdgq.png",
+          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214485/zen_market_wbntst.webp",
         },
         {
           video:
@@ -515,7 +515,7 @@ let data = [
           text1: "OLX",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774361/olx_jei3si.png",
+          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/olx_rsc2lu.webp",
         },
         {
           video:
@@ -523,7 +523,7 @@ let data = [
           text1: "Daddy Promise Foundation",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774380/promise_yora7b.png",
+          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214461/promise_qgqcum.webp",
         },
         {
           video:
@@ -531,7 +531,7 @@ let data = [
           text1: "Health Section",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774386/health_sk1ubh.png",
+          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/health_vxkd5x.webp",
         },
     ],
   },
@@ -544,7 +544,7 @@ let data = [
         text1: "Rixius",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773924/rixius_csipoz.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214467/rixius_deyas0.webp",
       },
       {
         video:
@@ -552,7 +552,7 @@ let data = [
         text1: "Westerman",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773935/westermann_im7oc4.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214486/zoomprop_hw6uqk.webp",
       },
       {
         video:
@@ -560,7 +560,7 @@ let data = [
         text1: "Zoom Prop",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773943/zoomprop_fklgld.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/westermann_uvg3uw.webp",
       },
       {
         video:
@@ -568,7 +568,7 @@ let data = [
         text1: "Extend Tech",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774148/extentfiles_bssewz.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214489/extentfiles_srxvaq.webp",
       },
       {
         video:
@@ -576,7 +576,7 @@ let data = [
         text1: "TAG",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774178/tag_bylaxt.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214473/tag_ntktjh.webp",
       },
       {
         video:
@@ -584,7 +584,7 @@ let data = [
         text1: "Zycada",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774218/zycada_xaryqn.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214487/zycada_cjhnxp.webp",
       },
       {
         video:
@@ -592,7 +592,7 @@ let data = [
         text1: "Mojo Naaz",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774208/ai_ylsmch.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214495/ai_iv0aip.webp",
       },
       {
         video:
@@ -600,7 +600,7 @@ let data = [
         text1: "North Point",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774230/northpoint_gxcdly.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/northpoint_ev2tma.webp",
       },
       {
         video:
@@ -608,7 +608,7 @@ let data = [
            text1: "Sprinto",
            text2: "Next-gen audience intelligence",
            type: "Explainer Video",
-           poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774243/sprinto_hhykcw.png",
+           poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214469/sprinto_xeam6h.webp",
          },
          {
           video:
@@ -616,7 +616,7 @@ let data = [
           text1: "RDP Store",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774338/store_auzlhn.png",
+          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214471/store_bzjkfi.webp",
         },
         {
           video:
@@ -624,7 +624,7 @@ let data = [
           text1: "Zen Marketing",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774353/zen_market_aakdgq.png",
+          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214485/zen_market_wbntst.webp",
         },
         {
           video:
@@ -632,7 +632,7 @@ let data = [
           text1: "Burners",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774356/burners_u6tr01.png",
+          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/burners_r4rvtm.webp",
         },
         {
           video:
@@ -640,7 +640,7 @@ let data = [
           text1: "OLX",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774361/olx_jei3si.png",
+          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214457/olx_rsc2lu.webp",
         },
         {
           video:
@@ -648,7 +648,7 @@ let data = [
           text1: "Cyber X",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774367/cyber_zistaz.png",
+          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214500/cyber_q0e52t.webp",
         },
         {
           video:
@@ -656,7 +656,7 @@ let data = [
           text1: "The Property Finance",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774374/property_icrbhl.png",
+          poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214461/property_wrspil.webp",
         },
         {
           video:
@@ -664,7 +664,7 @@ let data = [
           text1: "Health Section",
           text2: "Next-gen audience intelligence",
           type: "Explainer Video",
-          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774386/health_sk1ubh.png",
+          poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/health_vxkd5x.webp",
         },
     ],
   },
@@ -677,7 +677,7 @@ let data = [
         text1: "Honey",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774333/white_krh4vq.png",
+        poster:   "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/white_fwbn6b.webp",
       },
    
     ],
@@ -691,7 +691,7 @@ let data = [
         text1: "Compassion",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/Compassion_Video_av0lvl.webp",
       },
       // {
       //   video:
@@ -715,7 +715,7 @@ let data = [
         text1: "Commitment",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740774236/commitment_lv7p3u.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214498/commitment_1_zx1rsv.webp",
       },
     ],
   },
@@ -728,7 +728,7 @@ let data = [
         text1: "Intent Connect",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773970/recycle_xwgoyj.png",
+        poster: "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214467/recycle_zgpe6o.webp",
       },
       // {
       //   video:
@@ -756,7 +756,7 @@ let data = [
         text1: "Westerman",
         text2: "Next-gen audience intelligence",
         type: "Explainer Video",
-        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1740773935/westermann_im7oc4.png",
+        poster:  "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214486/zoomprop_hw6uqk.webp",
       },
       // {
       //   video:

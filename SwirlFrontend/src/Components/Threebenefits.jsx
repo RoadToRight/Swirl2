@@ -7,11 +7,6 @@ import { IoMdPlayCircle } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import Context1 from "../Context/Context1";
 import {Link} from "react-router-dom";
-// import { useGSAP } from "@gsap/react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-
 const Threebenefits = () => {
   const { DarkLight } = useContext(Context1);
 

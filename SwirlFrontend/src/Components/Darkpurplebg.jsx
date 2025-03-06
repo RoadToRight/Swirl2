@@ -2,11 +2,6 @@ import React,{useEffect } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import { Link } from "react-router-dom";
-// import { useGSAP } from "@gsap/react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-
 const Darkpurplebg = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -47,7 +42,7 @@ const Darkpurplebg = () => {
       <div className=" ">
         <div className="img ">
           <img
-            src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772037/darkpurple2_yqatkj.webp"
+            src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214501/darkpurple2_1_rjlttr.webp"
             alt=""
             className="img-fluid"
           />
@@ -88,7 +83,7 @@ export default Darkpurplebg;
 
 const DarkPurplediv = styled.div`
   min-height: 662px;
-  background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740776624/darkpurplebg_bqx1ws.webp");
+  background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1741214502/darkpurplebg_xlajmp.webp");
   background-repeat: no-repeat;
   box-sizing: border-box;
 

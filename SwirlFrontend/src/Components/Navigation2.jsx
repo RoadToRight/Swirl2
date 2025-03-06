@@ -19,8 +19,8 @@ const Navigation2 = ({ DarkLight, setDarkLight }) => {
   let Navigate = useNavigate();
   const { setloading2 } = useContext(Context1);
   let logo = DarkLight
-    ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776299/navblack_i76olk.jpg"
-    : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776266/Layer_8_r5zyzs.png";
+    ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214455/navblack_v2tjzq.webp"
+    : "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214454/Layer_8_ojif9p.webp";
     let shadow =
       DarkLight 
         ? "3px 4px 12px 1px rgba(0,0,0,0.25)"
@@ -68,7 +68,7 @@ const NavOpen2 = () => {
     <NavDiv className={`bg-${bgcolor} `} style={{boxShadow:`${shadow}`}}>
       <div className="logo">
         <img src={`${logo}`}  alt="" className={`w-[150px] cursor-pointer`} onClick={() => {Navigate("/");  window.location.reload();}}/>
-        <img src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1740776266/Layer_8_r5zyzs.png`}  alt="" className={`w-[150px] cursor-pointer d-none`} onClick={() => {Navigate("/");  window.location.reload();}}/>
+        <img src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1741214454/Layer_8_ojif9p.webp`}  alt="" className={`w-[150px] cursor-pointer d-none`} onClick={() => {Navigate("/");  window.location.reload();}}/>
       </div>
       <div className="nav-links  flex justify-center items-center">
         <ul

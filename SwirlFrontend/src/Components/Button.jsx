@@ -12,9 +12,6 @@ const Button = ({
   translateZ ,
   MinustranslateZ
 }) => {
- 
-
-
   return (
     <ButtonDiv className="cursor-pointer">
       

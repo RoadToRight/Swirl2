@@ -6,16 +6,10 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 import { IoCloseOutline } from "react-icons/io5";
 import Button from "./Button";
 import { data, Alldata, balls } from "../creationsImg";
-// import { useGSAP } from "@gsap/react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { gsap } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js";
-import Loader from "./Loader";
 import Loader2 from "./Loader2";
-// gsap.registerPlugin(ScrollTrigger);
 
 const Work2 = () => {
-  const { DarkLight,loading2, setloading2 } = useContext(Context1);
+  //useState
   const [isOpen2, setIsOpen2] = useState(false);
   const [btnWidth, setbtnWidth] = useState("20vw");
   const [LargeVideosHover, setLargeVideosHover] = useState([]);
@@ -29,67 +23,79 @@ const Work2 = () => {
   const [YoutubeUrl, setYoutubeUrl] = useState();
   const [smallvideosAnimationState, setsmallvideosAnimationState] =
     useState(true);
-
   const [windowWidth, setwindowWidth] = useState(window.innerWidth);
-  let ImageHelpLoad = {};
-  const [IMAGESLOAD, setIMAGESLOAD] = useState(
-    Alldata.reduce((acc, _, index) => {
-      // Using reduce to accumulate the key-value pairs in an object
-      acc[`${index}-largeAll`] = false;
-      return acc;
-    }, {})
-  );
 
+  //----------------------------------------------------------------------------useContext-----------------------------------------
+  const { DarkLight } = useContext(Context1);
+  //----------------------------------------------------------------------------------variables-------------------------
   let Textcolor = DarkLight ? "black" : "white";
   let bgcolor = DarkLight ? "white" : "black";
   let bgcolor3 = DarkLight ? "bg-white" : "bg-[#17121e84]";
   let bgcolor2 = DarkLight ? "white" : "white";
+  //---------------------------------------------------------------------useNavigate--------------------------------------
   let Navigate = useNavigate();
+  //--------------------------------------------------------------------uselocation-------------------------------------
   let location = useLocation();
+  //---------------------------------------------------------------useRef--------------------------------------------------------
   let work = useRef(null);
-  let Img = useRef(null);
   const videoRefs = useRef([]);
   const videoRefs2 = useRef([]);
   const videoRefs3 = useRef([]);
-  // const { contextSafe } = useGSAP();
-
-  // console.log()
+  //----------------------------------------------------------useEffect---------------------------------------------------------
   useEffect(() => {
-    // Decode the URL and then replace all '%' characters with a space
     let decodedString = decodeURIComponent(location.pathname);
     let updatedString = decodedString.replace(/%/g, " ").split("/")[2];
-    // console.log(updatedString);
-    // setTypeOfVideo(updatedString);
     handleSelectOption2(updatedString);
     SearchVideoType2(updatedString);
-    // console.log("ma useEffect chala");
   }, [location]);
 
+  useEffect(() => {
+    // Function to update the window width
+    const handleResize = () => {
+      setwindowWidth(window.innerWidth);
+    };
 
+    // Add event listener on component mount
+    window.addEventListener("resize", handleResize);
 
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  useEffect(() => {
+    if (windowWidth <= 1024) {
+      setsmallvideosAnimationState(false);
+    } else {
+      setsmallvideosAnimationState(true);
+    }
+    if (windowWidth <= 992) {
+    }
 
-  /**
-   * ! Functions
-   */
+    if (windowWidth <= 468) {
+      setbtnWidth("90vw"); // This will apply when the width is 468px or less
+    } else if (windowWidth <= 900) {
+      setbtnWidth("41vw"); // This will apply for widths between 469px and 900px
+    } else {
+      setbtnWidth("20vw"); // This will apply for widths larger than 900px
+    }
+  }, [windowWidth]);
+
+  // -------------------------------------------------------------------functions-------------------------------------------
   const handleToggleDropdown2 = () => {
     setIsOpen2(!isOpen2);
   };
   const handleSelectOption2 = (value) => {
     setTypeOfVideo(value);
-
     setIsOpen2(false);
   };
   const SearchVideoType2 = (TypeOfVideoParams) => {
     setTypeOfVideoToPrint(TypeOfVideoParams ? TypeOfVideoParams : TypeOfVideo);
-    // const String = TypeOfVideo.split(" ").join("")
     if (!TypeOfVideoParams) {
       Navigate(`/creations/${TypeOfVideo}`);
     }
     let Filter = data.find((x) => {
       let Keys = Object.keys(x)[0];
-      let Values = Object.values(x)[0];
-      // console.log(TypeOfVideo)
-
       if (TypeOfVideoParams !== "All") {
         return Keys === TypeOfVideoParams;
       }
@@ -101,7 +107,6 @@ const Work2 = () => {
       let smallData = Values.filter((c, i) => {
         return i !== 0;
       });
-      // console.log(smallData);
       setDataToVideo(smallData);
     } else {
       setDataToVideo([]);
@@ -110,15 +115,12 @@ const Work2 = () => {
   };
   const SearchVideoType = (TypeOfVideoParams) => {
     setTypeOfVideoToPrint(TypeOfVideoParams ? TypeOfVideoParams : TypeOfVideo);
-    // const String = TypeOfVideo.split(" ").join("")
     if (!TypeOfVideoParams) {
       Navigate(`/creations/${TypeOfVideo}`);
     }
     let Filter = data.find((x) => {
       let Keys = Object.keys(x)[0];
       let Values = Object.values(x)[0];
-      // console.log(TypeOfVideo)
-
       if (TypeOfVideo !== "All") {
         return Keys === TypeOfVideo;
       }
@@ -130,7 +132,6 @@ const Work2 = () => {
       let smallData = Values.filter((c, i) => {
         return i !== 0;
       });
-      // console.log(smallData);
       setDataToVideo(smallData);
     } else {
       setDataToVideo([]);
@@ -166,58 +167,7 @@ const Work2 = () => {
       videoRefs3.current = arr;
     }
   };
-  /**
-   * ! USEGSAP
-   */
-
-
-
-useEffect(() => {
-  // console.log(IMAGESLOAD,loading2)
-
-  let allTrue = Object.values(IMAGESLOAD).every(value => value === true);
-  // console.log(allTrue)
-  if(allTrue){
-    setloading2(false)
-    // document.body.style.overflow = "hidden"; 
-   }else{
-    setloading2(true)
-    // document.body.style.overflow = "hidden"; 
-   }
-}, [IMAGESLOAD])
-
-
-  useEffect(() => {
-    // Function to update the window width
-    const handleResize = () => {
-      setwindowWidth(window.innerWidth);
-    };
-
-    // Add event listener on component mount
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  useEffect(() => {
-    if (windowWidth <= 1024) {
-      setsmallvideosAnimationState(false);
-    } else {
-      setsmallvideosAnimationState(true);
-    }
-    if (windowWidth <= 992) {
-    }
-
-    if (windowWidth <= 468) {
-      setbtnWidth("90vw"); // This will apply when the width is 468px or less
-    } else if (windowWidth <= 900) {
-      setbtnWidth("41vw"); // This will apply for widths between 469px and 900px
-    } else {
-      setbtnWidth("20vw"); // This will apply for widths larger than 900px
-    }
-  }, [windowWidth]);
+  //-------------------------------GSAP Work--------------------------------------------------
   if (!setsmallvideosAnimationState) {
     console.log("dsad");
     useGSAP(() => {
@@ -249,24 +199,10 @@ useEffect(() => {
     });
   }
 
-useEffect(() => {
-
-
-  if (loading2) {
-
-    // document.body.style.overflow = "hidden"; // Disable scroll
-  } else {
-
-    // document.body.style.overflow = "hidden"; // Enable scroll
-  }
-}, [loading2,IMAGESLOAD,Alldata]); 
-
-
   return (
- 
-   
     <Workdiv className={`bg-${bgcolor}`}>
-    {loading2 && <Loader2 />}
+      {/* --------------------------------------------------- Youtube  ----------------------------------------------------*/}
+
       {YoutubeVideo ? (
         <div className="video-container">
           <IoCloseOutline
@@ -285,35 +221,49 @@ useEffect(() => {
           ></iframe>
         </div>
       ) : null}
-      {/* Ball  */}
-   
+
+      {/* --------------------------------------------------- Ball Work   ----------------------------------------------------*/}
       <div className="ball absolute left-0 top-28">
-        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
+        <img
+          src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
+          alt=""
+        />
       </div>
       <div className="ball-right absolute right-0 top-28">
-        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
+        <img
+          src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
+          alt=""
+        />
       </div>
 
       {TypeOfVideoToPrint === "All" ? (
         balls?.map((x) => {
           return (
             <div className={`${x.class} absolute ${x.align} ${x.top}`}>
-              <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
+              <img
+                src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
+                alt=""
+              />
             </div>
           );
         })
       ) : (
         <div>
           <div className="ball2 absolute right-36 top-[100%]">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
+            <img
+              src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
+              alt=""
+            />
           </div>
           <div className="ball2 absolute left-26 top-[120%]">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
+            <img
+              src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
+              alt=""
+            />
           </div>
         </div>
       )}
-
-      {/* Selection */}
+      {/* --------------------------------------------------- Selection  ----------------------------------------------------*/}
       <div className="text container text-center">
         <div className={`head-top font-bold text-[39px] text-${Textcolor}`}>
           Find the right style for your video.
@@ -411,14 +361,12 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* ImagesSection  */}
+      {/* --------------------------------------------------- IMAGES SECTION  ----------------------------------------------------*/}
 
       <div className={`All-Images-Parent `} ref={work}>
+        {/* ---------------------------------------------------ALL IMAGES SECTION  ----------------------------------------------------*/}
         {TypeOfVideoToPrint === "All"
           ? Alldata.map((item, index) => {
-           
-    
-          
               const videos = Object.values(item)[0];
               let videoElements = [];
 
@@ -444,20 +392,6 @@ useEffect(() => {
                       src={`${videos[0].poster}`}
                       alt=""
                       className={`w-[1120px] h-[470px]`}
-                     
-                      onLoad={() => 
-                        setIMAGESLOAD((prev) => ({
-                          ...prev, // Spread the previous state to keep the existing data
-                          [`${index}-largeAll`]: true // Add or update the key-value pair for the specific index
-                        }))
-                      }
-                      
-                      // onLoad={() =>
-                      //   setIMAGESLOAD((prev) => ({
-                      //     ...prev,
-                      //     [`${index}-largeAll`]: true,
-                      //   }))
-                      // }
                     />
 
                     <div
@@ -533,12 +467,6 @@ useEffect(() => {
                               src={`${x.poster}`}
                               alt=""
                               className={`w-[550px] h-[370px]`}
-                              onLoad={() => 
-                                setIMAGESLOAD((prev) => ({
-                                  ...prev, // Spread the previous state to keep the existing data
-                                  [`${index}-smallAll1`]: true // Add or update the key-value pair for the specific index
-                                }))
-                              }
                             />
 
                             <div
@@ -621,12 +549,6 @@ useEffect(() => {
                               src={`${x.poster}`}
                               alt=""
                               className={`w-[1120px] h-[470px]`}
-                              onLoad={() => 
-                                setIMAGESLOAD((prev) => ({
-                                  ...prev, // Spread the previous state to keep the existing data
-                                  [`${index}-smallAll2`]: true // Add or update the key-value pair for the specific index
-                                }))
-                              }
                             />
 
                             <div
@@ -695,7 +617,7 @@ useEffect(() => {
               return videoElements;
             })
           : null}
-
+        {/* ---------------------------------------------------LARGE ALONE IMAGES SECTION  ----------------------------------------------------*/}
         {TypeOfVideoToPrint !== "All"
           ? LargeVideoData?.map((x, index) => {
               return (
@@ -715,11 +637,9 @@ useEffect(() => {
                   }}
                 >
                   <img
-                  
                     src={`${x.poster}`}
                     alt=""
                     className={`w-[1120px] h-[470px]`}
-            
                   />
 
                   <div
@@ -761,7 +681,7 @@ useEffect(() => {
               );
             })
           : null}
-
+        {/* ---------------------------------------------------SMALL ALONE IMAGES SECTION  ----------------------------------------------------*/}
         <div className="small-videos relative">
           {TypeOfVideoToPrint !== "All"
             ? DataToVideo?.map((x, index, arr) => {
@@ -837,10 +757,8 @@ useEffect(() => {
         </div>
       </div>
     </Workdiv>
-
   );
 };
-
 export default Work2;
 
 const Workdiv = styled.div`
@@ -854,10 +772,8 @@ const Workdiv = styled.div`
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-
   .selection {
     width: 50vw;
-
     border-radius: 9px;
     height: auto;
     padding: 20px;
@@ -876,7 +792,6 @@ const Workdiv = styled.div`
   .select2 {
     border: 1px solid black;
     border-radius: 2px;
-
     @media (max-width: 992px) {
       width: 40vw;
     }

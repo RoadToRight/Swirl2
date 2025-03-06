@@ -43,10 +43,10 @@ const QuotesBottom = () => {
 
         <div className="cards">
           <Cards
-            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776765/3_cards_1_xzeqwv.png"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214494/3_cards_1_toahsx.webp"}
             title={"Adam Harder"}
             text={"Senior Video Operations Manager"}
-            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776861/3_cards_1_2_k1lz5i.png"}
+            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214493/3_cards_1_2_tpm903.webp"}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }
@@ -54,10 +54,10 @@ const QuotesBottom = () => {
           />
 
           <Cards
-            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776765/3_cards_1_xzeqwv.png"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214494/3_cards_1_toahsx.webp"}
             title={"Shonal Narayan"}
             text={"Marketing Manager"}
-            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776861/3_cards_1_2_k1lz5i.png"}
+            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214493/3_cards_1_2_tpm903.webp"}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }
@@ -65,10 +65,10 @@ const QuotesBottom = () => {
           />
 
           <Cards
-            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776433/img1_2_tuuq4b.png"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214494/3_cards_1_toahsx.webp"}
             title={"Ron Schniedermann"}
             text={"CEO"}
-            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1740776861/3_cards_1_2_k1lz5i.png"}
+            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214493/3_cards_1_2_tpm903.webp"}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }

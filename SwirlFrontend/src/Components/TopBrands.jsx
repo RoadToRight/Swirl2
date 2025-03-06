@@ -81,40 +81,40 @@ const TopBrands = () => {
             <div className={`text text-[17px] font-medium leading-[25px] text-center text-${Textcolor}`}>Used by over 450+ of the world's best startups and established enterprises</div>
             <div className="logos mt-6" ref={top}>
             <div className="img-div">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773545/top1_apx3w4.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top2_thfojz.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773546/top3_foz0je.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773548/top4_tjf6iu.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top6_dw0ukt.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top9_c4gxur.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773544/top7_i0gcac.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top8_p7lses.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top5_b78je6.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top6_vjxjel.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top5_rffrtg.webp" alt="" />
           </div>
 
             {brandsAnimation ? <>
             <div className="img-div">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773545/top1_apx3w4.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top2_thfojz.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773546/top3_foz0je.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773548/top4_tjf6iu.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top6_dw0ukt.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top9_c4gxur.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773544/top7_i0gcac.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top8_p7lses.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top5_b78je6.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top6_vjxjel.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top5_rffrtg.webp" alt="" />
           </div>
           
           <div className="img-div">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773545/top1_apx3w4.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top2_thfojz.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773546/top3_foz0je.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773548/top4_tjf6iu.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top6_dw0ukt.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top9_c4gxur.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773544/top7_i0gcac.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top8_p7lses.png" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740773547/top5_b78je6.png" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top6_vjxjel.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top5_rffrtg.webp" alt="" />
           </div>
           </> : null}
           </div>
@@ -142,7 +142,6 @@ const TopBrandsDiv = styled.div`
     gap: 20px;
     align-items: center;
     justify-content: center;
-    /* animation: slide 5s infinite linear; */
     will-change: transform;  /* Hint for the browser to optimize animations */
     transition: all 300ms ease;
   }

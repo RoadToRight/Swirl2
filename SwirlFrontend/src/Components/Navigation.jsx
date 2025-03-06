@@ -20,8 +20,8 @@ const Navigation = ({ DarkLight, setDarkLight }) => {
   let Navigate = useNavigate();
   let logo =
     DarkLight && scrolled
-      ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776207/navblack-wtbg_zymnvu.png"
-      : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776266/Layer_8_r5zyzs.png";
+      ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214455/navblack-wtbg_wpcpcr.webp"
+      : "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214454/Layer_8_ojif9p.webp";
 
       // "/Project IMG/navblack.jpg"
       let shadow =
@@ -226,10 +226,7 @@ const NavDiv = styled.div`
   justify-content: space-between;
   padding: 5px 50px;
   width: 100%;
-  /* background:linear-gradient(to right ,#82155A, #202A66 ); */
-  /* Check if any parent container has overflow hidden or auto */
   overflow: visible;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 15px rgba(0, 0, 0, 0.15); */
 
   top: 0px;
   @media (max-width: 992px) {

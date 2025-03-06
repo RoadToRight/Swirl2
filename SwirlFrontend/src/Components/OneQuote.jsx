@@ -29,22 +29,22 @@ let Data = [
           is exceptional work, always punctual, and open to any proposal for
           improvement. Without a doubt, my trusted agency for these jobs.
           1,000% recommended.”`,
-    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777282/Quote2_huzvx1.png",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214501/darguba2_mkb8lj.webp",
     logoText:"Dargubra"
   },
   {
     Quote:`  “Very professional. Very patient. Amazing job.”`,
-    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777282/Quote2_huzvx1.png",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/Quote2_dvrfw0.webp",
     logoText:"Eric"
   },
   {
     Quote:`  “Great to work on a project again. Quality you can depend on.”`,
-    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777286/Quote3_ajzygi.png",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214465/Quote3_zmxdf8.webp",
     logoText:"Martin"
   },
   {
     Quote:`  “Exceptional work. Always delivered on time and with good communication. Did all of his work custom made. Highly recommend Swirl365”`,
-    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1740777290/Quote4_zni6ng.webp",
+    logo:"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214466/Quote4_qsbtjp.webp",
     logoText:"niffostudios's"
   }
 ]

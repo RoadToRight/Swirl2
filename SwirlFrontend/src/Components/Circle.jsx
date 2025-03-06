@@ -14,8 +14,8 @@ const Circle = () => {
 
   let Textcolor = DarkLight ? "black" : "white";
   let Logo = DarkLight
-    ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776207/navblack-wtbg_zymnvu.png"
-    : "https://res.cloudinary.com/diyha1kd9/image/upload/v1740776266/Layer_8_r5zyzs.png";
+    ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214455/navblack-wtbg_wpcpcr.webp"
+    : "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214454/Layer_8_ojif9p.webp";
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -109,7 +109,7 @@ const Circle = () => {
                   Motion Graphics
                 </div>
                 <img
-                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740776433/img1_2_tuuq4b.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214506/img1_2_zx1suo.webp"
                   alt=""
                   className="first-circle z-1 w-[145px] circle"
                   style={{
@@ -137,7 +137,7 @@ const Circle = () => {
                   Character Animation
                 </div>
                 <img
-                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740774194/Compassion_Video_g5yqxp.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/Compassion_Video_av0lvl.webp"
                   alt=""
                   className="first-circle z-1 w-[145px]"
                   style={{
@@ -164,7 +164,7 @@ const Circle = () => {
                   Isometric
                 </div>
                 <img
-                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772037/darkpurple2_yqatkj.webp"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214501/darkpurple2_1_rjlttr.webp"
                   alt=""
                   className="first-circle z-1 w-[145px]"
                   style={{
@@ -192,7 +192,7 @@ const Circle = () => {
                   Whiteboard Video
                 </div>
                 <img
-                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740774333/white_krh4vq.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214484/white_fwbn6b.webp"
                   alt=""
                   className="first-circle z-1 w-[145px]"
                   style={{
@@ -207,9 +207,9 @@ const Circle = () => {
                 alt=""
                 className="absolute z-1 circleLogo w-[150px]"
               />
-              <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740776513/circle_ekbrla.png" alt="" className="absolute" />
+              <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214497/circle_xe01zg.webp" alt="" className="absolute" />
               <img
-                src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png"
+                src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
                 alt=""
                 className="absolute ball"
               />

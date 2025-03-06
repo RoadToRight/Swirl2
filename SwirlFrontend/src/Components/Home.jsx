@@ -21,11 +21,11 @@ const Home = () => {
           height="auto"
         >
           <source
-            src="https://res.cloudinary.com/dyxmm2qpt/video/upload/v1738420262/Swirl_Starting_Video_fcmh3k.mp4"
+            src="https://res.cloudinary.com/diyha1kd9/video/upload/v1741212763/Swirl_Starting_Video_1_gyku2k.mp4"
             type="video/mp4"
           />
           <source
-            src="https://res.cloudinary.com/dyxmm2qpt/video/upload/v1738420262/Swirl_Starting_Video_fcmh3k.webm"
+            src="https://res.cloudinary.com/diyha1kd9/video/upload/v1741212763/Swirl_Starting_Video_1_gyku2k.webm"
             type="video/webm"
           />
           Sorry, your browser doesn't support embedded videos.

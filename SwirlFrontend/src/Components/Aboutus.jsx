@@ -13,7 +13,7 @@ const Aboutus = () => {
   return (
     <AboutDiv className={`bg-${bgcolor}`}>
       <div className="ball absolute right-0 top-6">
-        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740771970/ball_n5ssrr.png" alt="" />
+        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp" alt="" />
       </div>
       <div className="text container text-center">
         <div className={`head-top leading-[57.6px] font-bold text-[38px] text-${Textcolor}`}>We make videos that bring companies to life</div>
@@ -33,21 +33,18 @@ const Aboutus = () => {
           </div>
 
           <div className="right1 flex justify-center items-center">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772037/darkpurple2_yqatkj.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214501/darkpurple2_1_rjlttr.webp" alt="" />
           </div>
 
         </div>
         <div className="sec2">
           <div className="right2 flex justify-center items-center">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740772078/about2_odyzpe.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214495/about2_jqc1hp.webp" alt="" />
           </div>
           <div className="left2 left flex justify-center  flex-col">
             <div className={`head font-bold leading-[48px] text-${Textcolor}`}>Our Story</div>
             <div className={`small font-normal leading-[25px] mt-3 text-${Textcolor}`}>Swirl 365 was born from a passion for innovation and creativity. What started as a small team of dreamers with big ideas has grown into a full-fledged software house delivering cutting-edge solutions. Our journey began with the desire to bridge the gap between technology and artistry, offering services that combine technical expertise with creative excellence. Over the years, we’ve helped clients across industries bring their visions to life, and our story is still unfolding with every project we take on.</div>
           </div>
-
-
-
         </div>
       </div>
     </AboutDiv>
@@ -58,17 +55,15 @@ export default Aboutus;
 
 const AboutDiv = styled.div`
 
-background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1740772123/contactbg_azdckc.webp");
+background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1741214499/contactbg_lbyrvp.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-
   padding: 50px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   .about{
     width: 1200px;
     height: auto;
@@ -115,9 +110,7 @@ background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v174077
     .left1{
         @media (max-width:900px) {
           order:1;
-       
     }
-    
     }
   }
 
@@ -132,15 +125,10 @@ background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v174077
     }
     @media (max-width:900px) {
     grid-template-columns: repeat(1,1fr);
-
     }
- 
     .right2{
         @media (max-width:900px) {
-    
- 
             text-align: center;
-    
     }
 }
     .head{
@@ -158,44 +146,29 @@ background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v174077
     @media (max-width:1114px) {
         font-size: 15px;
         padding: 0px 0px;
-
     }
     @media (max-width:900px) {
-    
-   
     text-align: center;
-
 }
   }
 
   .head-top{
     @media (max-width:442px) {
-    
         font-size: 33px;
-
-        
 }
 @media (max-width:442px) {
-    
     font-size: 33px;
-   
-    
 }
 @media (max-width:373px) {
-    
     font-size: 30px;
- 
-    
 }
   }
-
 .small{
   @media (max-width:600px) {
     font-size: 12px;
     line-height: 22px;
     }
 }
-
   .ball{
     @media (max-width: 992px) {
      top: 8%;
