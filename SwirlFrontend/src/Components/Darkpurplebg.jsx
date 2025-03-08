@@ -2,6 +2,9 @@ import React,{useEffect } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 const Darkpurplebg = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -41,10 +44,11 @@ const Darkpurplebg = () => {
     <DarkPurplediv>
       <div className=" ">
         <div className="img ">
-          <img
+          <LazyLoadImage
             src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214501/darkpurple2_1_rjlttr.webp"
             alt=""
             className="img-fluid"
+            effect="blur"
           />
         </div>
       </div>

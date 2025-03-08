@@ -4,7 +4,8 @@ import styled from "styled-components";
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
 // import { gsap } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 const TopBrandsWithCircle = () => {
   const { DarkLight } = useContext(Context1);
   const [ setcircle] = useState(3);
@@ -91,39 +92,39 @@ useEffect(() => {
         <div className="logos mt-6" ref={top}>
           <div className="img-div"
           >
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
          
             
           </div>
           {brandsAnimation ? <>
             <div className="img-div">
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
          
           </div>
           
           <div className="img-div">
-          <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
+          <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
+            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
          
           </div>
           </> : null}

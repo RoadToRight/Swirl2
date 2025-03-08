@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import Context1 from "../Context/Context1";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 const Quotes = () => {
   const { DarkLight, Testinomials } = useContext(Context1);
 
@@ -45,7 +46,8 @@ const Quotes = () => {
             <div
               className={`Rectangle Rectangle-sec-1 ${bgcolor} w-[340px] relative p-4 rounded-3xl h-[435px]`}
             >
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -66,7 +68,8 @@ const Quotes = () => {
               </div>
               <br />
               <br />
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214466/quoteimg1_ep5slj.webp"
                 alt=""
                 className="relative z-1 -left-2"
@@ -75,7 +78,8 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}
             >
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -92,7 +96,8 @@ const Quotes = () => {
               </div>
               <br />
               <div className="flex items-center pl-3">
-                <img
+                <LazyLoadImage
+                effect="blur"
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214463/q4_e2zhyh.webp"
                   alt=""
                   className="relative z-1 -left-2"
@@ -106,7 +111,8 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}
             >
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -122,7 +128,8 @@ const Quotes = () => {
                 Great to work on a project again. Quality you can depend on.
               </div>
               <br />
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214462/q2_w3fewb.webp"
                 alt=""
                 className="relative z-1 -left-2 "
@@ -131,7 +138,8 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor}  w-[340px] relative p-4 rounded-3xl`}
             >
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -147,7 +155,8 @@ const Quotes = () => {
                 Syed, it really looks great! Love the overall video! TY TY TY!
               </div>
               <br />
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214462/q3_d4s986.webp"
                 alt=""
                 className="relative z-1 -left-2"
@@ -157,7 +166,8 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}
             >
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -177,7 +187,8 @@ const Quotes = () => {
               <br />
               <br />
               <div className="flex tems-center pl-3">
-                <img
+                <LazyLoadImage
+                effect="blur"
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214463/q5_bzqriq.webp"
                   alt=""
                   className="relative z-1 -left-2"
@@ -193,7 +204,8 @@ const Quotes = () => {
             <div
               className={`Rectangle2 ${bgcolor} w-[430px] relative p-4 rounded-3xl`}
             >
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -222,7 +234,8 @@ const Quotes = () => {
               <br />
               <br />
               <div className="flex items-center pl-3">
-                <img
+                <LazyLoadImage
+                effect="blur"
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp"
                   alt=""
                   className="relative z-1 -left-2"

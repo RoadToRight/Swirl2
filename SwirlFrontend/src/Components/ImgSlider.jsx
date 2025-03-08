@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 // import gsap from "gsap";
 // import { gsap } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js";
 // import { gsap } from 'gsap';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 // import { useGSAP } from "@gsap/react";
 import styled from "styled-components";
 import Button from "./Button";
@@ -359,7 +360,8 @@ useEffect(() => {
                   YoutubeUrlSetterLarge(index);
                 }}
               />
-              <img
+              <LazyLoadImage
+              effect="blur"
                 key={index}
                 src={image}
                 className="img1  w-[55vw] h-[475px] object-cover object-cover flex-shrink-0 rounded-3xl"
@@ -388,7 +390,8 @@ useEffect(() => {
                 }}
                 
               />
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={x}
                 className="img2  w-[500px] h-[240px] object-cover flex-shrink-0 rounded-lg"
                  loading="lazy"
@@ -410,7 +413,8 @@ useEffect(() => {
                   YoutubeUrlSetterSmall2(index);
                 }}
               />
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src={x}
                 className="img2  w-[500px] h-[240px] object-cover flex-shrink-0 rounded-lg"
                 loading="lazy"

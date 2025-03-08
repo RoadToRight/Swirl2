@@ -6,8 +6,8 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 import { IoCloseOutline } from "react-icons/io5";
 import Button from "./Button";
 import { data, Alldata, balls } from "../creationsImg";
-import Loader2 from "./Loader2";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 const Work2 = () => {
   //useState
   const [isOpen2, setIsOpen2] = useState(false);
@@ -224,13 +224,15 @@ const Work2 = () => {
 
       {/* --------------------------------------------------- Ball Work   ----------------------------------------------------*/}
       <div className="ball absolute left-0 top-28">
-        <img
+        <LazyLoadImage
+        effect="blur"
           src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
           alt=""
         />
       </div>
       <div className="ball-right absolute right-0 top-28">
-        <img
+        <LazyLoadImage
+        effect="blur"
           src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
           alt=""
         />
@@ -240,7 +242,8 @@ const Work2 = () => {
         balls?.map((x) => {
           return (
             <div className={`${x.class} absolute ${x.align} ${x.top}`}>
-              <img
+              <LazyLoadImage
+              effect="blur"
                 src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
                 alt=""
               />
@@ -250,13 +253,15 @@ const Work2 = () => {
       ) : (
         <div>
           <div className="ball2 absolute right-36 top-[100%]">
-            <img
+            <LazyLoadImage
+            effect="blur"
               src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
               alt=""
             />
           </div>
           <div className="ball2 absolute left-26 top-[120%]">
-            <img
+            <LazyLoadImage
+            effect="blur"
               src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
               alt=""
             />
@@ -388,7 +393,8 @@ const Work2 = () => {
                       }));
                     }}
                   >
-                    <img
+                    <LazyLoadImage
+                    effect="blur"
                       src={`${videos[0].poster}`}
                       alt=""
                       className={`w-[1120px] h-[470px]`}
@@ -463,7 +469,8 @@ const Work2 = () => {
                               }));
                             }}
                           >
-                            <img
+                            <LazyLoadImage
+                            effect="blur"
                               src={`${x.poster}`}
                               alt=""
                               className={`w-[550px] h-[370px]`}
@@ -545,7 +552,8 @@ const Work2 = () => {
                               }));
                             }}
                           >
-                            <img
+                            <LazyLoadImage
+                            effect="blur"
                               src={`${x.poster}`}
                               alt=""
                               className={`w-[1120px] h-[470px]`}
@@ -636,7 +644,8 @@ const Work2 = () => {
                     }));
                   }}
                 >
-                  <img
+                  <LazyLoadImage
+                  effect="blur"
                     src={`${x.poster}`}
                     alt=""
                     className={`w-[1120px] h-[470px]`}
@@ -703,7 +712,8 @@ const Work2 = () => {
                           }));
                         }}
                       >
-                        <img
+                        <LazyLoadImage
+                        effect="blur"
                           src={`${x.poster}`}
                           alt=""
                           className={`w-[550px] h-[370px]`}
