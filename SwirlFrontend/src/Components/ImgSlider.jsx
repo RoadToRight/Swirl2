@@ -364,7 +364,7 @@ useEffect(() => {
                 src={image}
                 className="img1  w-[55vw] h-[475px] object-cover object-cover flex-shrink-0 rounded-3xl"
                 alt={`image-${index}`}
-             
+              loading="lazy"
               />
             </div>
           ))}
@@ -391,7 +391,7 @@ useEffect(() => {
               <img
                 src={x}
                 className="img2  w-[500px] h-[240px] object-cover flex-shrink-0 rounded-lg"
-          
+                 loading="lazy"
               />
             </div>
           );
@@ -413,7 +413,7 @@ useEffect(() => {
               <img
                 src={x}
                 className="img2  w-[500px] h-[240px] object-cover flex-shrink-0 rounded-lg"
-            
+                loading="lazy"
               />
             </div>
           );

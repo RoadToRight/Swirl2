@@ -5,6 +5,8 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -15,7 +17,7 @@ const Footer = () => {
       <div className="Footer-Sections-5">
         <div className="Logo">
           <div>
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214472/swirl_logo_footer_sv7e35.webp" alt="" />
+            <LazyLoadImage src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214472/swirl_logo_footer_sv7e35.webp" alt="" loading="lazy" effect="blur" />
           </div>
           <br />
           <small className="text-lightgrey font-normal leading-[24px] text-[14px]">
@@ -259,10 +261,9 @@ const FooterDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
     @media (max-width: 991px) {
       flex-direction: column;
-
       width: 100vw;
       padding: 10px 28px;
     }
@@ -286,9 +287,16 @@ const FooterDiv = styled.div`
 
     width: 100%;
     @media (max-width: 991px) {
-      width: 100vw;
+      width: 95vw;
+    }
+    @media (max-width: 600px) {
+      width: 90vw;
+    }
+    @media (max-width: 400px) {
+      width: 87vw;
     }
     .Child {
+
       @media (max-width: 991px) {
         align-items: flex-start !important;
       }

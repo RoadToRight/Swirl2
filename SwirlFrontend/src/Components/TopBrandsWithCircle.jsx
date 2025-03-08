@@ -95,11 +95,11 @@ useEffect(() => {
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top6_vjxjel.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top5_rffrtg.webp" alt="" />
+         
             
           </div>
           {brandsAnimation ? <>
@@ -108,11 +108,11 @@ useEffect(() => {
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top6_vjxjel.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top5_rffrtg.webp" alt="" />
+         
           </div>
           
           <div className="img-div">
@@ -120,11 +120,11 @@ useEffect(() => {
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top6_vjxjel.webp" alt="" />
+            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
             <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
-            <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214477/top5_rffrtg.webp" alt="" />
+         
           </div>
           </> : null}
         

@@ -19,6 +19,7 @@ const Home = () => {
           playsInline
           width="100%" // Adjust this based on your layout
           height="auto"
+          poster="https://res.cloudinary.com/diyha1kd9/image/upload/v1741374063/donkey_v5kqkv.webp"
         >
           <source
             src="https://res.cloudinary.com/diyha1kd9/video/upload/v1741212763/Swirl_Starting_Video_1_gyku2k.mp4"

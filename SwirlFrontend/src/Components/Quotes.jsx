@@ -223,7 +223,7 @@ const Quotes = () => {
               <br />
               <div className="flex items-center pl-3">
                 <img
-                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1740777208/q6_iaf3dj.png"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp"
                   alt=""
                   className="relative z-1 -left-2"
                 />

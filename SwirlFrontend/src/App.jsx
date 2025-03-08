@@ -2,37 +2,58 @@ import { lazy, useEffect, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
-import Footer from "./Components/Footer";
-// let Footer = lazy(() => import("./Components/Footer"))
-import DoYouHaveQues from "./Components/DoYouHaveQues";
-import QuotesBottom from "./Components/QuotesBottom";
-import Quotes from "./Components/Quotes";
-import Darkpurplebg from "./Components/Darkpurplebg";
-import Stats from "./Components/Stats";
-// let Stats = lazy(() => import("./Components/Stats"))
-import ReadyTomakeVideo from "./Components/ReadyTomakeVideo";
-import Pricing from "./Components/Pricing";
-import OneQuote from "./Components/OneQuote";
-import ContactUS from "./Components/ContactUS";
-// let ContactUS = lazy(() => import("./Components/ContactUS"))
-import Aboutus from "./Components/Aboutus";
-// let Aboutus = lazy(() => import("./Components/Aboutus"))
-import Circle from "./Components/Circle";
-import Threebenefits from "./Components/Threebenefits";
-import TopBrands from "./Components/TopBrands";
-import Home from "./Components/Home";
-import Navigation from "./Components/Navigation";
-import ImgSlider from "./Components/ImgSlider";
+// import Footer from "./Components/Footer";
+let Footer = lazy(() => import("./Components/Footer"));
+// import DoYouHaveQues from "./Components/DoYouHaveQues";
+let DoYouHaveQues = lazy(() => import("./Components/DoYouHaveQues"));
+// import QuotesBottom from "./Components/QuotesBottom"
+let QuotesBottom = lazy(() => import("./Components/QuotesBottom"));
+// import Quotes from "./Components/Quotes";
+let Quotes = lazy(() => import("./Components/Quotes"));
+// import Darkpurplebg from "./Components/Darkpurplebg";
+let Darkpurplebg = lazy(() => import("./Components/Darkpurplebg"));
+// import Stats from "./Components/Stats";
+let Stats = lazy(() => import("./Components/Stats"));
+// import ReadyTomakeVideo from "./Components/ReadyTomakeVideo";
+let ReadyTomakeVideo = lazy(() => import("./Components/ReadyTomakeVideo"));
+// import Pricing from "./Components/Pricing";
+let OneQuote = lazy(() => import("./Components/OneQuote"));
+// import OneQuote from "./Components/OneQuote";
+// import ContactUS from "./Components/ContactUS";
+let ContactUS = lazy(() => import("./Components/ContactUS"));
+// import Aboutus from "./Components/Aboutus";
+let Aboutus = lazy(() => import("./Components/Aboutus"));
+// import Circle from "./Components/Circle";
+let Circle = lazy(() => import("./Components/Circle"));
+// import Threebenefits from "./Components/Threebenefits";
+let Threebenefits = lazy(() => import("./Components/Threebenefits"));
+// import TopBrands from "./Components/TopBrands";
+let TopBrands = lazy(() => import("./Components/TopBrands"));
+// import Home from "./Components/Home";
+let Home = lazy(() => import("./Components/Home"));
+// import Navigation from "./Components/Navigation";
+let Navigation = lazy(() => import("./Components/Navigation"));
+// import ImgSlider from "./Components/ImgSlider";
+let ImgSlider = lazy(() => import("./Components/ImgSlider"));
 import { Route, Routes, useLocation } from "react-router-dom";
+
 import Context1 from "./Context/Context1";
-import Navigation2 from "./Components/Navigation2";
-import Scroll from "./Components/ScrollIndicator.jsx";
-import Loader from "./Components/Loader";
+let Pricing = lazy(() => import("./Components/Pricing"));
+// import Navigation2 from "./Components/Navigation2";
+let Navigation2 = lazy(() => import("./Components/Navigation2"));
+// import Scroll from "./Components/ScrollIndicator.jsx";
+let Scroll = lazy(() => import("./Components/ScrollIndicator"));
+// import Loader from "./Components/Loader";
+let Loader = lazy(() => import("./Components/Loader"));
 import { ToastContainer } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
+
 import { IoCloseOutline } from "react-icons/io5";
+
 import styled from "styled-components";
-import Work2 from "./Components/Work2.jsx";
+// import Work2 from "./Components/Work2.jsx";
+let Work2 = lazy(() => import("./Components/Work2"));
 
 function App() {
   const [DarkLight, setDarkLight] = useState(true);
