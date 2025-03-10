@@ -13,7 +13,7 @@ const Darkpurplebg = () => {
    useEffect(() => {
     // GSAP animation using the global `gsap` from window object
         window.gsap.from(".img", {
-      x: -300, // Start from 200px below the element's initial position
+      y: 250, // Start from 200px below the element's initial position
       opacity: 0, // Start from 0 opacity
       duration: 1.5, // Duration for the animation
       ease: "power3.out", // Easing function to smooth the transition
@@ -26,7 +26,7 @@ const Darkpurplebg = () => {
       },
     });
     window.gsap.from(".textttD, .buttondiv", {
-      x: 300, // Start from 200px below the element's initial position
+      y: 250, // Start from 200px below the element's initial position
       opacity: 0, // Start from 0 opacity
       duration: 1.5, // Duration for the animation
       ease: "power3.out", // Easing function to smooth the transition

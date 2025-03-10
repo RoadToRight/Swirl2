@@ -3,13 +3,7 @@ import styled from "styled-components";
 import Button from "./Button";
 import Context1 from "../Context/Context1";
 import TopBrandsWithCircle from "./TopBrandsWithCircle";
-// import { useGSAP } from "@gsap/react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-// gsap.registerPlugin(ScrollTrigger);
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css'
 const Circle = () => {
   const { DarkLight } = useContext(Context1);
 
@@ -44,19 +38,16 @@ const Circle = () => {
       [circle]: { rotateX, rotateY },
     }));
   };
-
-
   const handleMouseLeave = (circle) => {
     setTilts((prev) => ({
       ...prev,
       [circle]: { rotateX: 0, rotateY: 0 },
     }));
   };
-
     useEffect(() => {
    
     window.gsap.from(".imgDiv", {
-      x: -300, // Start from 300px left of the element's initial position
+      y: 250, // Start from 300px left of the element's initial position
       opacity: 0, // Start from 0 opacity
       duration: 1.5, // Adjusted duration for smoother animation
       ease: "power3.out", // Easing function to smooth the transition
@@ -70,7 +61,7 @@ const Circle = () => {
     });
 
        window.gsap.from(".textttC", {
-      x: -300, // Start from 300px left of the element's initial position
+      y: 250, // Start from 300px left of the element's initial position
       opacity: 0, // Start from 0 opacity
       duration: 1.5, // Adjusted duration for smoother animation
       ease: "power3.out", // Easing function to smooth the transition

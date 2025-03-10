@@ -67,7 +67,6 @@ background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v174121
   .about{
     width: 1200px;
     height: auto;
-  
     box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.1);
     backdrop-filter:blur(20px);
     border-radius: 9px;
@@ -80,9 +79,6 @@ background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v174121
     }
     @media (max-width:1030px) {
       width: 900px;
-    }
-    @media (max-width:920px) {
-      width: 850px;
     }
     @media (max-width:920px) {
       width: 95vw;
@@ -155,9 +151,6 @@ background-image: url("https://res.cloudinary.com/diyha1kd9/image/upload/v174121
   .head-top{
     @media (max-width:442px) {
         font-size: 33px;
-}
-@media (max-width:442px) {
-    font-size: 33px;
 }
 @media (max-width:373px) {
     font-size: 30px;

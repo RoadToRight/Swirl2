@@ -1,18 +1,91 @@
 import React from 'react'
-import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
 const Loader = () => {
   return (
-    <div className='h-screen bg-[#000000] text-white font-bold text-[30px] z-[2000] fixed w-screen flex justify-center items-center'>
-          <Helmet>
+    <LoaderDiv className='h-screen bg-[#ffffff] text-white font-bold text-[30px] z-[2000] fixed w-screen flex justify-center items-center'>
+          {/* <Helmet>
         <link rel="preload" href="/Project IMG/logoanime.webm" as="video" type="video/webm" />
       </Helmet>
       <video autoPlay muted loop  preload="auto">
       <source src="/Project IMG/logoanime.webm" type="video/webm" />
       
-      </video>
+      </video> */}
+
+<div class="container">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     
-    </div>
+    </LoaderDiv>
   )
 }
 
 export default Loader;
+
+const LoaderDiv = styled.div`
+  
+/* From Uiverse.io by terenceodonoghue */ 
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+  animation: rotate_3922 1.2s linear infinite;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+}
+
+.container span {
+  position: absolute;
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+}
+
+.container span:nth-of-type(1) {
+  filter: blur(5px);
+}
+
+.container span:nth-of-type(2) {
+  filter: blur(10px);
+}
+
+.container span:nth-of-type(3) {
+  filter: blur(25px);
+}
+
+.container span:nth-of-type(4) {
+  filter: blur(50px);
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  border: solid 5px #ffffff;
+  border-radius: 50%;
+}
+
+@keyframes rotate_3922 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+`

@@ -9,7 +9,7 @@ const Quotes = () => {
   useEffect(() => {
     // GSAP animation using the global `gsap` from window object
     window.gsap.from(".Quote", {
-      x: -300, // Start from 200px below the element's initial position
+      x: -250, // Start from 200px below the element's initial position
       opacity: 0, // Start from 0 opacity
       duration: 1, // Duration for the animation
       ease: "power3.out", // Easing function to smooth the transition
@@ -18,7 +18,7 @@ const Quotes = () => {
         start: "18% 80%", // Start animation when the top of the element reaches 80% from the top of the viewport
         end: "bottom 30%", // End when the top of the element reaches 30% from the top of the viewport
         scrub: 1, // Smoothly scrub the animation based on scroll position
-        // markers: true,  // Show scroll trigger markers for debugging (you can remove it once you're done debugging)
+     
       },
     });
   }, []);
@@ -46,8 +46,8 @@ const Quotes = () => {
             <div
               className={`Rectangle Rectangle-sec-1 ${bgcolor} w-[340px] relative p-4 rounded-3xl h-[435px]`}
             >
-              <LazyLoadImage
-              effect="blur"
+              <img
+              
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -78,8 +78,8 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}
             >
-              <LazyLoadImage
-              effect="blur"
+              <img
+              
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -111,6 +111,17 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}
             >
+                          <img
+              
+              src={
+                DarkLight
+                  ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
+                  : "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214481/Vectordark_ixqlaj.webp"
+              }
+              alt=""
+              className="w-24 h-22 absolute top-5 left-5 img"
+            />
+
               <LazyLoadImage
               effect="blur"
                 src={
@@ -138,8 +149,8 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor}  w-[340px] relative p-4 rounded-3xl`}
             >
-              <LazyLoadImage
-              effect="blur"
+              <img
+              
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -166,8 +177,8 @@ const Quotes = () => {
             <div
               className={`Rectangle ${bgcolor} w-[340px] relative p-4 rounded-3xl`}
             >
-              <LazyLoadImage
-              effect="blur"
+              <img
+              
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"
@@ -204,8 +215,8 @@ const Quotes = () => {
             <div
               className={`Rectangle2 ${bgcolor} w-[430px] relative p-4 rounded-3xl`}
             >
-              <LazyLoadImage
-              effect="blur"
+              <img
+              
                 src={
                   DarkLight
                     ? "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214480/Vector_pf197m.webp"

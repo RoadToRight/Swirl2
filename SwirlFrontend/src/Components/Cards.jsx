@@ -5,13 +5,8 @@ import Context1 from "../Context/Context1";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import styled from "styled-components";
 
-
 const Cards = ({ img, title, text, img2, text2, url }) => {
-  const {
-    DarkLight,
-    PlayYouTubeCard,
-    setYoutubeUrl,
-  } = useContext(Context1);
+  const { DarkLight, PlayYouTubeCard, setYoutubeUrl } = useContext(Context1);
 
   let Textcolor = DarkLight ? "black" : "white";
 
@@ -44,12 +39,12 @@ const Cards = ({ img, title, text, img2, text2, url }) => {
             {title}
           </Card.Title>
           <Card.Text className={`text-${Textcolor}`}>{text}</Card.Text>
-          <Card.Img
+          {/* <Card.Img
             variant="top"
             src={`${img2}`}
             className="imgcard"
             style={{ width: "89px", height: "39px" }}
-          />
+          /> */}
         </Card.Body>
         <ListGroup className="list-group-flush">
           <ListGroup.Item
@@ -59,33 +54,16 @@ const Cards = ({ img, title, text, img2, text2, url }) => {
             {text2}
           </ListGroup.Item>
           <div className="flex ml-4 py-2">
-            <Card.Img
-              variant="top"
-              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1741214470/Star_rwu8sl.webp`}
-              style={{ width: "21px", height: "21px" }}
-            />
-            <Card.Img
-              variant="top"
-              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1741214470/Star_rwu8sl.webp`}
-              style={{ width: "21px", height: "21px" }}
-            />
-            <Card.Img
-              variant="top"
-              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1741214470/Star_rwu8sl.webp`}
-              style={{ width: "21px", height: "21px" }}
-            />
-            <Card.Img
-              variant="top"
-              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1741214470/Star_rwu8sl.webp`}
-              style={{ width: "21px", height: "21px" }}
-            />
-            <Card.Img
-              variant="top"
-              src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1741214470/Star_rwu8sl.webp`}
-              style={{ width: "21px", height: "21px" }}
-            />
+            {[1, 2, 3, 4,5].map((x) => {
+              return (
+                <Card.Img
+                  variant="top"
+                  src={`https://res.cloudinary.com/diyha1kd9/image/upload/v1741214470/Star_rwu8sl.webp`}
+                  style={{ width: "21px", height: "21px" }}
+                />
+              );
+            })}
           </div>
-       
         </ListGroup>
       </Card>
     </CardDiv>

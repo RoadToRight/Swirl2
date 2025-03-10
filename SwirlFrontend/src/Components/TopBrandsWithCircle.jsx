@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import Context1 from "../Context/Context1";
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
 // import { gsap } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js";
@@ -16,37 +16,6 @@ const TopBrandsWithCircle = () => {
   const animation = useRef(null);
   let Textcolor = DarkLight ? "black" : "white";
   let bgcolor = DarkLight ? "white" : "transparent";
-
-useEffect(() => {
-
-  
-  if (brandsAnimation && top.current) {
-    // If brandsAnimation is true, create the animation
-    if (!animation.current) {
-      animation.current = window.gsap.fromTo(
-        top.current,
-        { x: 0 },
-        {
-          x: -1000,
-       
-          duration: 20,
-          repeat: -1,
-          yoyo: true,
-        }
-      );
-    }
-  } else if (animation.current) {
-    // If brandsAnimation is false, stop and reset the animation
-
-    animation.current.kill();
-    window.gsap.set(top.current, { x: 0 });
-    animation.current = null;
-    // animation.current.restart(); 
-  }
-
-}, [brandsAnimation]);
-
-
 
   useEffect(() => {
     // Function to update the window width
@@ -66,16 +35,22 @@ useEffect(() => {
       
         if(WindowWidth < 1490){
           setbrandsAnimation(true)
-          // console.log("dsa")
  
         }else{
           setbrandsAnimation(false)
         }
-   
-  
     }, [WindowWidth])
-    
 
+    const row1 = [
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp",
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp",
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp",
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp",
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp",
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp",
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp",
+      "https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" 
+    ];
   return (
     <TopBrandsDiv className={`bg-${bgcolor}`} onClick={() => setcircle(60)}>
       <div>
@@ -89,7 +64,30 @@ useEffect(() => {
           enterprises
         </div>
 
-        <div className="logos mt-6" ref={top}>
+        {
+          brandsAnimation ? <>
+              <AppContainer>
+      <Wrapper>
+        <Marquee>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <ImageGroup>
+                <Image src={el} />
+              </ImageGroup>
+            ))}
+          </MarqueeGroup>
+          <MarqueeGroup>
+            {row1.map((el) => (
+              <ImageGroup>
+                <Image src={el} />
+              </ImageGroup>
+            ))}
+          </MarqueeGroup>
+        </Marquee>
+      </Wrapper>
+    </AppContainer>
+          </> : 
+          <div className="logos mt-6" ref={top}>
           <div className="img-div"
           >
             <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
@@ -103,33 +101,10 @@ useEffect(() => {
          
             
           </div>
-          {brandsAnimation ? <>
-            <div className="img-div">
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
-         
-          </div>
-          
-          <div className="img-div">
-          <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214474/top1_ihuoum.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top2_titjho.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214475/top3_trmuto.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214476/top4_riqcet.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214464/q6_sznw0e.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214479/top9_exwzgi.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top7_zek0qc.webp" alt="" />
-            <LazyLoadImage effect="blur"  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214478/top8_a8cyis.webp" alt="" />
-         
-          </div>
-          </> : null}
         
         </div>
+        }
+        
       </div>
     </TopBrandsDiv>
   );
@@ -173,4 +148,70 @@ const TopBrandsDiv = styled.div`
     }
   }
 `;
+const AppContainer = styled.div`
+  color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
+const Wrapper = styled.div`
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const Marquee = styled.div`
+  display: flex;
+  width: 1200px;
+  overflow: hidden;
+  user-select: none;
+
+  mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 10%,
+    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 0)
+  );
+`;
+
+const scrollX = keyframes`
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+`;
+
+const common = css`
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  animation: ${scrollX} 30s linear infinite;
+`;
+
+const MarqueeGroup = styled.div`
+  ${common}
+`;
+
+const ImageGroup = styled.div`
+  display: grid;
+  place-items: center;
+  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+`;
+
+const Image = styled.img`
+  object-fit: contain;
+  border-radius: 0.5rem;
+  aspect-ratio: 16/9;
+  padding: 5px 20px;
+
+`;

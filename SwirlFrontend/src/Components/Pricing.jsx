@@ -25,10 +25,8 @@ const Pricing = () => {
     const handleResize = () => {
       setwindowidth(window.innerWidth);
     };
-
     // Add event listener on component mount
     window.addEventListener("resize", handleResize);
-
     // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -37,7 +35,6 @@ const Pricing = () => {
 
   useEffect(() => {
     if (windowidth <= 466) {
-      console.log("yes");
       setbtnwidth("280px");
     } else {
       setbtnwidth("325px");
@@ -73,10 +70,16 @@ const Pricing = () => {
         </div>
       ) : null}
       <div className="imgDiv absolute balldiv">
-        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp" alt="" />
+        <img
+          src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
+          alt=""
+        />
       </div>
       <div className="imgDiv absolute balldiv2">
-        <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp" alt="" />
+        <img
+          src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214496/ball_tuplpn.webp"
+          alt=""
+        />
       </div>
       <div className="text flex flex-col items-center justify-center">
         <div
@@ -128,17 +131,16 @@ const Pricing = () => {
         </div>
 
         <br />
-
-   
       </div>
 
       <div className="Plans">
         <div>
           <div className={`basic plan ${bgcolor2}`}>
             <div
-              className={`head font-bold leading-[26.4px] text-[18px] text-${Textcolor} pt-4`}
+              className={`head font-bold leading-[26.4px]  text-${Textcolor} text-[22px] flex flex-col gap-2 pt-4`}
             >
               Basic
+              <div className="text-[26px] font-extrabold">$299.00</div>
             </div>
 
             <div className={`hr ${hrcolor}`}></div>
@@ -212,53 +214,69 @@ const Pricing = () => {
 
             <div className="images mt-2 flex gap-2 relative">
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214458/pricingex1_ct8uvi.webp" alt="" />
+                <img
+                className="w-[95px]"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214490/Haive_sel5ey.webp"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/kncsl7USwPs?si=n6qgynph9-0MWCdk"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay1 absolute top-4 left-8
+                  className="pricingeexplay1 cursor-pointer absolute top-4 left-[13%]
                 "
                 />
               </div>
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214459/pricingex3_gqxbhb.webp" alt="" />
+                <img
+                className="w-[95px]"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214461/property_wrspil.webp"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/vnC6P0Sx5Z8?si=SHPwOU5rRf7IkxRd"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay2 absolute top-4 left-28
+                  className="pricingeexplay2 cursor-pointer absolute top-4 left-[48%]
                 "
                 />
               </div>
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214459/pricingex2_jikywt.webp" alt="" />
+                <img
+                className="w-[95px]"
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214461/promise_qgqcum.webp"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/HLmJZaNWgs8?si=30Bbjy5oDSwxbO7G"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay3 absolute top-4 left-48
+                  className="pricingeexplay3 cursor-pointer absolute top-4 left-[82%]
                 "
                 />
               </div>
             </div>
             <div className="flex items-start justify-start mt-2">
-              <Link to={"/contactus"} onClick={scrollToTop} state={{ location: "From Basic Plan" }}>
+              <Link
+                to={"/contactus"}
+                onClick={scrollToTop}
+                state={{ location: "From Basic Plan" }}
+              >
                 <Button
                   text={"Get Quote"}
                   color={"#360F4F"}
@@ -278,8 +296,9 @@ const Pricing = () => {
             <div className="best absolute right-0 top-0 bg-[#be28cc] text-white">
               Best Choice
             </div>
-            <div className="head font-bold leading-[26.4px] text-[18px] text-[#ffffff] pt-4">
+            <div className="head font-bold leading-[26.4px]  text-[#ffffff] pt-4 text-[22px] flex flex-col gap-2">
               Standard
+              <div className="text-[26px] font-extrabold">$599.00</div>
             </div>
 
             <div className="hr bg-white"></div>
@@ -341,53 +360,69 @@ const Pricing = () => {
 
             <div className="images mt-2 flex gap-2 relative">
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214458/pricingex1_ct8uvi.webp" alt="" />
+                <img
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214487/zycada_cjhnxp.webp"
+                          className="w-[95px]"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/Nn-0oKmNsG0?si=9FBFEnP5xPi5vMZ_"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay1 absolute top-4 left-8
+                  className="pricingeexplay1 cursor-pointer absolute top-4 left-[13%]
                 "
                 />
               </div>
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214459/pricingex3_gqxbhb.webp" alt="" />
+                <img
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214469/sprinto_xeam6h.webp"
+                          className="w-[95px]"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/QOJI12yDgFk?si=QLGOz4-GERJMeZuV"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay2 absolute top-4 left-28
+                  className="pricingeexplay2 cursor-pointer absolute top-4 left-[48%]
                 "
                 />
               </div>
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214459/pricingex2_jikywt.webp" alt="" />
+                <img
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214489/game_kup6oi.webp"
+                          className="w-[95px]"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/se_6p5mOO2g?si=4e7tjHJuBFKbcF81"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay3 absolute top-4 left-48
+                  className="pricingeexplay3 cursor-pointer absolute top-4 left-[82%]
                 "
                 />
               </div>
             </div>
             <div className="flex items-start justify-start mt-2">
-              <Link to={"/contactus"} onClick={scrollToTop} state={{ location: "From Standard Plan" }}>
+              <Link
+                to={"/contactus"}
+                onClick={scrollToTop}
+                state={{ location: "From Standard Plan" }}
+              >
                 <Button
                   text={"Get Quote"}
                   color={"#360F4F"}
@@ -403,11 +438,12 @@ const Pricing = () => {
         </div>
 
         <div>
-          <div className={`Premium plan3 plan ${bgcolor2}`}>
+          <div className={`Premium plan3 plan ${bgcolor2} `}>
             <div
-              className={`head font-bold leading-[26.4px text-[18px] text-${Textcolor} pt-4`}
+              className={`head font-bold leading-[26.4px] text-[22px] text-${Textcolor} pt-4 flex flex-col gap-2`}
             >
               Premium
+              <div className="text-[26px] font-extrabold">$999.00</div>
             </div>
 
             <div className={`hr ${hrcolor}`}></div>
@@ -417,7 +453,7 @@ const Pricing = () => {
                 className={`flex items-center gap-2 text-[#002632] leading-[48px] text-${Textcolor}`}
               >
                 <FaCheck />
-                90 second duration 
+                90 second duration
               </li>
               <li
                 className={`flex items-center gap-2 text-[#002632] leading-[48px] text-${Textcolor}`}
@@ -436,14 +472,12 @@ const Pricing = () => {
               >
                 <FaCheck />
                 HD Quality
-               
               </li>
               <li
                 className={`flex items-center gap-2 text-[#002632] leading-[48px] text-${Textcolor}`}
               >
                 {" "}
                 <FaCheck />
-                
                 Unlimited Revisions
               </li>
               <li
@@ -451,21 +485,18 @@ const Pricing = () => {
               >
                 <FaCheck />
                 Dedicated Support
-               
               </li>
               <li
                 className={`flex items-center gap-2 text-[#002632] leading-[48px] text-${Textcolor}`}
               >
                 <FaCheck />
-                  4K Quality
-             
+                4K Quality
               </li>
               <li
                 className={`flex items-center gap-2 text-[#002632] leading-[48px] text-${Textcolor}`}
               >
                 <FaCheck />
                 Custom Illustration
-             
               </li>
               <li
                 className={`flex items-center gap-2 text-[#002632] leading-[48px] text-${Textcolor}`}
@@ -488,53 +519,69 @@ const Pricing = () => {
 
             <div className="images mt-2 flex gap-2 relative">
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214458/pricingex1_ct8uvi.webp" alt="" />
+                <img
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214482/trust_quay_y4nmch.webp"
+                   className="w-[95px]"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/-wJjmguH_oU?si=ENmbCOaV95tCjQXw"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay1 absolute top-4 left-8
+                  className="pricingeexplay1 cursor-pointer absolute top-4 left-[13%]
                 "
                 />
               </div>
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214459/pricingex3_gqxbhb.webp" alt="" />
+                <img
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214486/zoomprop_hw6uqk.webp"
+                   className="w-[95px]"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/iM7WKPX2tQg?si=uABZu3rHRcnCXeuX"
                     );
                   }}
                   alt=""
-                  className=" pricingeexplay2 absolute top-4 left-28
+                  className=" pricingeexplay2 cursor-pointer absolute top-4 left-[48%]
                 "
                 />
               </div>
               <div>
-                <img src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214459/pricingex2_jikywt.webp" alt="" />
+                <img
+                  src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214498/commitment_1_zx1rsv.webp"
+                   className="w-[95px]"
+                  alt=""
+                />
                 <img
                   src="https://res.cloudinary.com/diyha1kd9/image/upload/v1741214460/pricingexplay_kmubax.webp"
                   onClick={() => {
                     PlayYouTube();
                     setYoutubeUrl(
-                      "https://www.youtube.com/embed/rpQFuuoAxTc?si=YU_Sw9NmakgX_j-w"
+                      "https://www.youtube.com/embed/SBHs42FB3vc?si=khawvSses1e_jpxi"
                     );
                   }}
                   alt=""
-                  className="pricingeexplay3 absolute top-4 left-48
+                  className="pricingeexplay3 cursor-pointer absolute top-4 left-[82%]
                 "
                 />
               </div>
             </div>
             <div className="flex items-start justify-start mt-2">
-              <Link to={"/contactus"} onClick={scrollToTop} state={{ location: "From Premium Plan" }}>
+              <Link
+                to={"/contactus"}
+                onClick={scrollToTop}
+                state={{ location: "From Premium Plan" }}
+              >
                 <Button
                   text={"Get Quote"}
                   color={"#360F4F"}
@@ -563,7 +610,11 @@ const Pricing = () => {
         </div>
 
         <div className="button">
-          <Link to={"/contactus"} onClick={scrollToTop} state={{ location: "From Custom Craft" }}>
+          <Link
+            to={"/contactus"}
+            onClick={scrollToTop}
+            state={{ location: "From Custom Craft" }}
+          >
             <Button
               text={"Contact Now"}
               color={"white"}
@@ -591,7 +642,7 @@ const PricingDiv = styled.div`
   overflow: hidden;
   /* background-color: black; */
   /* height: 100vh; */
-.imgDiv {
+  .imgDiv {
     width: 374.01px;
     height: 393.19px;
   }
@@ -602,6 +653,7 @@ const PricingDiv = styled.div`
     gap: 10px;
     padding: 40px 40px;
     flex-wrap: wrap;
+
     @media (max-width: 1084px) {
       gap: 40px;
     }
@@ -613,67 +665,53 @@ const PricingDiv = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
+    
     backdrop-filter: blur(10px);
     /* background-color: #ffffff81; */
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 3px 4px 12px 1px rgba(183, 178, 178, 0.25);
-
+    transition: all 300ms ease;
     padding: 10px 15px;
     @media (max-width: 466px) {
       width: 280px;
     }
   }
+  .plan:hover{
+
+    box-shadow:  3px 4px 40px 1px #360f4f;
+  }
   .plan2 {
-    width: 328px;
+    width: 388px;
     height: auto;
     border-radius: 13px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-
-    /* Stronger blur effect for a more pronounced glass effect */
-    backdrop-filter: blur(
-      20px
-    ); /* Increased blur for a stronger frosted look */
-
-    /* Set the deep purple color for the background */
-    background: rgba(
-      20,
-      0,
-      50,
-      0.589
-    ); /* #140032 color with opacity for frosted glass */
-
-    /* Linear gradient from the deep purple with opacity for glassmorphism */
+    backdrop-filter: blur(20px);
+    background: rgba(20, 0, 50, 0.589);
     background: linear-gradient(
       135deg,
       rgba(20, 0, 50, 0.85),
-      /* Slightly transparent purple */ rgba(20, 0, 50, 1)
-        /* Solid purple at the end */
+      rgba(20, 0, 50, 1)
     );
-
-    /* Border for the glass effect */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Soft white border with opacity */
-
-    /* Box-shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 3px 4px 18px 1px rgba(20, 0, 50, 0.8);
-
-    /* Padding inside the container */
     padding: 10px 15px;
-
-    /* Text color for contrast */
-    color: #ffffff; /* White text for contrast against the dark purple background */
-
-    /* Media query for smaller screens */
+    color: #ffffff;
+    transition: all 300ms ease;
+    box-shadow:  13px 14px 100px 3px #360f4f;
     @media (max-width: 466px) {
-      width: 300px; /* Adjust width for smaller screens */
+      width: 300px; 
     }
   }
-.text-one{
-  @media (max-width:334px) {
-    font-size: 12px;
+  .plan2:hover{
+    box-shadow:  13px 14px 150px 3px #360f4f;
   }
-}
+  .text-one {
+    @media (max-width: 334px) {
+      font-size: 12px;
+    }
+  }
   .best {
     border-top-right-radius: 11px;
     border-bottom-left-radius: 13px;
@@ -690,10 +728,6 @@ const PricingDiv = styled.div`
       /* margin-left: 60px; */
       width: 90%;
     }
-    /* @media (max-width: 466px) {
-      margin-left: 35px;
-      width: 210px;
-    } */
   }
   .hr2 {
     background-color: #360f4f;
@@ -727,12 +761,12 @@ const PricingDiv = styled.div`
     height: 80px;
     border-radius: 13px;
     box-shadow: 3px 4px 12px 1px rgba(103, 17, 143, 0.782);
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 25px 0px;
-      @media (max-width: 920px) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0px;
+    @media (max-width: 920px) {
       width: 90%;
     }
     @media (max-width: 767px) {
@@ -753,11 +787,10 @@ const PricingDiv = styled.div`
       @media (max-width: 767px) {
         text-align: center;
       }
-      
+
       text-align: center;
       @media (max-width: 924px) {
         width: 80%;
-      
       }
       @media (max-width: 768px) {
         width: 80%;
@@ -772,10 +805,10 @@ const PricingDiv = styled.div`
       }
     }
     .custo-div {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .smallt {
     @media (max-width: 400px) {
@@ -845,14 +878,14 @@ const PricingDiv = styled.div`
       align-items: center;
       justify-content: center;
 
-      .pricingeexplay1 {
+      .pricingeexplay1 cursor-pointer {
         left: 36px;
       }
 
-      .pricingeexplay2 {
+      .pricingeexplay2 cursor-pointer {
         left: 113px;
       }
-      .pricingeexplay3 {
+      .pricingeexplay3 cursor-pointer {
         left: 195px;
       }
     }

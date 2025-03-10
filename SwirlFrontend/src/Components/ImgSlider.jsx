@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 // import gsap from "gsap";
 // import { gsap } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js";
 // import { gsap } from 'gsap';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 // import { useGSAP } from "@gsap/react";
 import styled from "styled-components";
 import Button from "./Button";
@@ -220,14 +220,33 @@ const ImgSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const SmallImg = useRef();
   const SmallImg2 = useRef();
+  const Animation1 = useRef()
+  const Animation2 = useRef()
   const [Small2, setSmall2] = useState(false);
+  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+  const [thirdSlideImg, setthirdSlideImg] = useState(false);
 
-  
-    useEffect(() => {
-    // GSAP animation using the global `gsap` from window object
-    // window.gsap.to(".box", { rotation: 360, duration: 2 });
-
-    window.gsap.fromTo(
+  useEffect(() => {
+    const handleResize = () => {
+      setwindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  useEffect(() => {
+    if (windowWidth <= 768) {
+      setthirdSlideImg(true);
+    } else {
+      setthirdSlideImg(false);
+    }
+    if (windowWidth <= 992) {
+    }
+  }, [windowWidth]);
+  useEffect(() => {
+    // Store GSAP animation instance in Animation1
+    Animation1.current = window.gsap.fromTo(
       SmallImg.current,
       {
         x: 0, // Starting position (right side)
@@ -240,9 +259,9 @@ const ImgSlider = () => {
         yoyo: true, // Reverse the animation after each cycle
       }
     );
-
-
-        window.gsap.fromTo(
+  
+    // Store GSAP animation instance in Animation2
+    Animation2.current = window.gsap.fromTo(
       SmallImg2.current,
       {
         x: -1500, // Starting position (left side)
@@ -256,50 +275,87 @@ const ImgSlider = () => {
         ease: "linear",
       }
     );
-      
   }, []);
-
   
-  const { PlayYouTubeCard, setYoutubeUrl, ProjectSlider,setSlideLoad } =
+  const handleMouseEnterImg2 = () => {
+    console.log("A")
+    if (Animation1.current) {
+      Animation1.current.timeScale(0.4); // Slow down animation
+    }
+  };
+  
+  const handleMouseLeaveImg2 = () => {
+
+    if (Animation1.current) {
+      Animation1.current.timeScale(4); // Speed up animation
+    }
+  };
+  
+  const handleMouseEnterImg3 = () => {
+
+    if (Animation2.current) {
+      Animation2.current.timeScale(0.4); // Slow down animation
+    }
+  };
+  
+  const handleMouseLeaveImg3 = () => {
+
+    if (Animation2.current) {
+      Animation2.current.timeScale(4); // Speed up animation
+    }
+  };
+  
+
+  const { PlayYouTubeCard, setYoutubeUrl, ProjectSlider, setSlideLoad } =
     useContext(Context1);
-  const [SlideImagesLoad, setSlideImagesLoad] = useState(images1.reduce((acc, _, index) => {
-    // Using reduce to accumulate the key-value pairs in an object
-    acc[`${index}-SlideAll1`] = false;
-    return acc;
-  }, {}))
-  const [SlideImagesLoad2, setSlideImagesLoad2] = useState(images1.reduce((acc, _, index) => {
-    // Using reduce to accumulate the key-value pairs in an object
-    acc[`${index}-SlideAll2`] = false;
-    return acc;
-  }, {}))
-  const [SlideImagesLoad3, setSlideImagesLoad3] = useState(images1.reduce((acc, _, index) => {
-    // Using reduce to accumulate the key-value pairs in an object
-    acc[`${index}-SlideAll3`] = false;
-    return acc;
-  }, {}))
+  const [SlideImagesLoad, setSlideImagesLoad] = useState(
+    images1.reduce((acc, _, index) => {
+      // Using reduce to accumulate the key-value pairs in an object
+      acc[`${index}-SlideAll1`] = false;
+      return acc;
+    }, {})
+  );
+  const [SlideImagesLoad2, setSlideImagesLoad2] = useState(
+    images1.reduce((acc, _, index) => {
+      // Using reduce to accumulate the key-value pairs in an object
+      acc[`${index}-SlideAll2`] = false;
+      return acc;
+    }, {})
+  );
+  const [SlideImagesLoad3, setSlideImagesLoad3] = useState(
+    images1.reduce((acc, _, index) => {
+      // Using reduce to accumulate the key-value pairs in an object
+      acc[`${index}-SlideAll3`] = false;
+      return acc;
+    }, {})
+  );
+
   // Set up the interval to update the image every 3 seconds (3000 ms)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images1.length); // Loop back to the first image after the last
     }, 3000); // Change image every 3 seconds
-
     // Clean up the interval when the component is unmounted
     return () => clearInterval(interval);
   }, []);
 
-useEffect(() => {
- 
-  let allTrue1 = Object.values(SlideImagesLoad).every(value => value === true);
-  let allTrue2 = Object.values(SlideImagesLoad2).every(value => value === true);
-  let allTrue3 = Object.values(SlideImagesLoad3).every(value => value === true);
+  useEffect(() => {
+    let allTrue1 = Object.values(SlideImagesLoad).every(
+      (value) => value === true
+    );
+    let allTrue2 = Object.values(SlideImagesLoad2).every(
+      (value) => value === true
+    );
+    let allTrue3 = Object.values(SlideImagesLoad3).every(
+      (value) => value === true
+    );
 
-  if(allTrue1 && allTrue2 && allTrue3){
-    setSlideLoad(false)
-  }else{
-    setSlideLoad(true)
-  }
-
-}, [SlideImagesLoad,SlideImagesLoad2,SlideImagesLoad3])
+    if (allTrue1 && allTrue2 && allTrue3) {
+      setSlideLoad(false);
+    } else {
+      setSlideLoad(true);
+    }
+  }, [SlideImagesLoad, SlideImagesLoad2, SlideImagesLoad3]);
 
   const YoutubeUrlSetterLarge = (index) => {
     images1Url.forEach((x, i) => {
@@ -351,8 +407,11 @@ useEffect(() => {
           style={{ transform: `translateX(-${currentIndex * 30}vw)` }}
         >
           {images1.map((image, index) => (
-            <div className="relative flex-shrink-0 imgL-parent rounded-3xl" key={index}>
-              { }
+            <div
+              className="relative flex-shrink-0 imgL-parent rounded-3xl"
+              key={index}
+            >
+              {}
               <FaPlay
                 className={`play  text-[60px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer flex-shrink-0`}
                 onClick={() => {
@@ -361,12 +420,12 @@ useEffect(() => {
                 }}
               />
               <LazyLoadImage
-              effect="blur"
+                effect="blur"
                 key={index}
                 src={image}
                 className="img1  w-[55vw] h-[475px] object-cover object-cover flex-shrink-0 rounded-3xl"
                 alt={`image-${index}`}
-              loading="lazy"
+                loading="lazy"
               />
             </div>
           ))}
@@ -375,26 +434,34 @@ useEffect(() => {
       <br />
       <div
         ref={SmallImg2}
-        className="sec2-parent  flex gap-4 w-full relative"
-        onMouseEnter={() => setSmall2(true)}
-        onMouseLeave={() => setSmall2(false)}
+        className={`sec2-parent  flex gap-4 w-full relative ${
+          thirdSlideImg ? "d-none" : ""
+        }`}
+        onMouseEnter={() => {setSmall2(true)}}
+        onMouseLeave={() => {setSmall2(false)}}
       >
         {images2.map((x, index) => {
           return (
-            <div className="relative flex-shrink-0 img2-parent rounded-lg" key={index}>
+            <div
+              className="relative flex-shrink-0 img2-parent rounded-lg"
+              key={index}
+         
+            >
               <FaPlay
                 className={`play  text-[60px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer flex-shrink-0`}
                 onClick={() => {
                   PlayYouTubeCard();
                   YoutubeUrlSetterSmall1(index);
                 }}
-                
               />
               <LazyLoadImage
-              effect="blur"
+                effect="blur"
                 src={x}
                 className="img2  w-[500px] h-[240px] object-cover flex-shrink-0 rounded-lg"
-                 loading="lazy"
+                loading="lazy"
+                            
+                onMouseEnter={() => {handleMouseEnterImg3()}}
+                onMouseLeave={() => {handleMouseLeaveImg3()}}
               />
             </div>
           );
@@ -402,10 +469,14 @@ useEffect(() => {
       </div>
       <br />
 
-      <div className="sec3-parent flex gap-4 w-full relative" ref={SmallImg}>
+      <div className="sec3-parent flex gap-4 w-full relative" ref={SmallImg}   >
         {images3.map((x, index) => {
           return (
-            <div className="relative flex-shrink-0 img2-parent rounded-lg" key={index}>
+            <div
+              className="relative flex-shrink-0 img2-parent rounded-lg"
+              key={index}
+
+            >
               <FaPlay
                 className={`play  text-[60px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer flex-shrink-0`}
                 onClick={() => {
@@ -414,10 +485,13 @@ useEffect(() => {
                 }}
               />
               <LazyLoadImage
-              effect="blur"
+                effect="blur"
                 src={x}
                 className="img2  w-[500px] h-[240px] object-cover flex-shrink-0 rounded-lg"
                 loading="lazy"
+                onMouseEnter={() => {handleMouseEnterImg2()}}
+                onMouseLeave={() => {handleMouseLeaveImg2()}}
+
               />
             </div>
           );

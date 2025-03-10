@@ -324,8 +324,14 @@ const ContactUS = () => {
 
       <div className="sides">
         <div className="left-side">
-          <div className={`head font-bold text-[38px] text-${Textcolor}`}>
-            Let's Connect!👋
+          <div className={`head font-bold text-[38px] flex items-center text-${Textcolor} gap-6 justify-between`}>
+            Let's Connect! 
+ 
+<div class="loader mb-4">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
           </div>
 
           <div
@@ -353,23 +359,43 @@ const ContactUS = () => {
           >
             Follow us
             <div className="social-img flex gap-2">
+            <a
+              href="https://www.facebook.com/share/1L1NVFUKaT/?mibextid=wwXIfr"
+              target="_blank"
+            >
               <FaFacebook className={`icon`} size={"28px"} cursor={"pointer"} />
-              <FaXTwitter
+              </a>
+              {/* <FaXTwitter
                 className={` icon`}
                 size={"28px"}
                 cursor={"pointer"}
-              />
+              /> */}
+                    <a
+              href="https://www.youtube.com/@Swirl365-binish"
+              target="_blank"
+            >
               <FaYoutube className={` icon`} size={"28px"} cursor={"pointer"} />
+                       </a>
+                       <a
+              href="https://www.instagram.com/swirl_365/profilecard/?igsh=MWRleG45eTE3ZWd4cg=="
+              target="_blank"
+            >
               <RiInstagramFill
                 className={` icon`}
                 size={"28px"}
                 cursor={"pointer"}
               />
+               </a>
+               <a
+              href="https://www.linkedin.com/company/swirl-365/"
+              target="_blank"
+            >
               <AiFillLinkedin
                 className={` icon`}
                 size={"28px"}
                 cursor={"pointer"}
               />
+                 </a>
             </div>
           </div>
         </div>
@@ -643,6 +669,114 @@ const ContactUSdiv = styled.div`
     backdrop-filter: blur(10px);
     background-color: transparent !important;
   }
+  /* From Uiverse.io by Pradeepsaranbishnoi */ 
+/* The loader container */
+.loader {
+  width: 140px;
+  height: 0px;
+  perspective: 200px;
+}
+
+
+/* The dot */
+.dot {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50px;
+  border: 20px outset #1e3f57;
+  transform-origin: 50% 50%;
+  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+  background-color: transparent;
+  animation: dot1 1000ms cubic-bezier(.49,.06,.43,.85) infinite;
+}
+
+.dot:nth-child(2) {
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  border-width: 30px;
+  border-color: #447891;
+  animation-name: dot2;
+  animation-delay: 75ms;
+  box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+}
+
+.dot:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border-width: 20px;
+  border-color: #6bb2cd;
+  animation-name: dot3;
+  animation-delay: 150ms;
+  box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+}
+
+@keyframes dot1 {
+  0% {
+    border-color: #1e3f57;
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+  }
+
+  50% {
+    border-color: #1e574f;
+    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+  }
+
+  100% {
+    border-color: #1e3f57;
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+  }
+}
+
+@keyframes dot2 {
+  0% {
+    border-color: #447891;
+    box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+  }
+
+  50% {
+    border-color: #449180;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);
+    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+  }
+
+  100% {
+    border-color: #447891;
+    box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+  }
+}
+
+@keyframes dot3 {
+  0% {
+    border-color: #6bb2cd;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+  }
+
+  50% {
+    border-color: #6bcdb2;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);
+    transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+  }
+
+  100% {
+    border-color: #6bb2cd;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+  }
+}
   .ball {
     @media (max-width: 992px) {
       top: 120%;
@@ -686,7 +820,7 @@ const ContactUSdiv = styled.div`
     }
   }
   .left-side {
-    width: 400px;
+    width: 420px;
     margin-left: 140px;
     @media (max-width: 1260px) {
       margin-left: 0px;
@@ -709,6 +843,7 @@ const ContactUSdiv = styled.div`
       }
     }
   }
+
   .right-side {
     width: 765px;
     min-height: 600px;

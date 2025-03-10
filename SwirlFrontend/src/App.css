@@ -1,35 +1,33 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
-   box-sizing: border-box; 
- }
-body{
-   font-family: "Inter", sans-serif;
-   margin: 0px;
-   padding: 0px;
-   cursor: url("https://res.cloudinary.com/diyha1kd9/image/upload/v1741214468/roundicon_ihboot.webp") 32 32, auto;
-
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  cursor: url("")
+      32 32,
+    auto;
 }
 html {
-   scroll-behavior: smooth;
- }
- :root{
-   scroll-behavior: smooth;
- }
-
-::-webkit-scrollbar{
-   width: 16px;
-   height: 10px;
+  scroll-behavior: smooth;
+}
+:root {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 16px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-   background: linear-gradient(135deg, #3b0a45, #2f1d3f, #4b1f6f);
-   transition: background 0.3s ease; 
- }
- 
- ::-webkit-scrollbar-thumb:hover {
-   background: linear-gradient(135deg, #4b1f6f, #3b0a45, #2f1d3f); 
- }
+  background: linear-gradient(135deg, #3b0a45, #2f1d3f, #4b1f6f);
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4b1f6f, #3b0a45, #2f1d3f);
+}

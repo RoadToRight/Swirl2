@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Context1 from "../Context/Context1";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 import { Link, useNavigate } from "react-router-dom";
-import { useWindowScroll } from "react-use";
-
 const Navigation = ({ DarkLight, setDarkLight }) => {
   const [NavOpenCondi, setNavOpenCondi] = useState(false);
   const [windowidth, setwindowidth] = useState(window.innerWidth);
@@ -28,7 +27,7 @@ const Navigation = ({ DarkLight, setDarkLight }) => {
       DarkLight && scrolled
         ? "3px 4px 12px 1px rgba(0,0,0,0.25)"
         : !DarkLight && scrolled ? "3px 4px 12px 1px rgba(255, 248, 248, 0.15) " : "";
-let logoSize =    DarkLight && scrolled ? "w-[150px]" : "w-auto"
+let logoSize =    DarkLight && scrolled ? "w-[150px]" : "w-[150px]"
 // console.log(logoSize)
   useEffect(() => {
     // Function to check if page is scrolled beyond a certain point
@@ -91,6 +90,7 @@ const NavOpen2 = () => {
       setmobileNavWidth("350px");
     } else {
       setmobileWidthgconfirm(false);
+      setNavOpenCondi(false)
       setmobileNavWidth("330px");
     }
   }, [windowidth]);
@@ -98,12 +98,12 @@ const NavOpen2 = () => {
   return (
     <NavDiv className={`${scrolled ? bgcolor : " bg-transparent"}`} style={{boxShadow:`${shadow}`}}>
       <a href={"/"}><div className="logo cursor-pointer ">
-        <img src={`${logo}`} alt="" className={`${logoSize} cursor-pointer ${logoLoad ? "block" : "hidden"} `} onClick={() => Navigate("/")} onLoad={() => setlogoLoad(true)} onLoadStart={() => setlogoLoad(false)}/>
+        <LazyLoadImage effect="blur" src={`${logo}`} alt="" className={`${logoSize} cursor-pointer ${logoLoad ? "block" : "hidden"} `} onClick={() => Navigate("/")} onLoad={() => setlogoLoad(true)} onLoadStart={() => setlogoLoad(false)}/>
         {/* <img src={`/Project IMG/navblack.jpg`} alt="" className={`${logoSize} cursor-pointer d-none`} onClick={() => Navigate("/")}/> */}
       </div></a>
       <div className="nav-links  flex justify-center items-center">
         <ul
-          className={`flex items-center justify-center  gap-4 mt-6 text-${Textcolor}  ${bgcolor3}`}
+          className={`flex items-center justify-center  gap-4 mt-6  text-${Textcolor}  ${bgcolor3} `}
           style={{
             width: `${
               NavOpenCondi
@@ -224,7 +224,8 @@ const NavDiv = styled.div`
   display: flex; // Change this to block or grid if sticky still doesn’t work
   align-items: center;
   justify-content: space-between;
-  padding: 5px 50px;
+  padding: 15px 50px;
+  padding-top: 30px;
   width: 100%;
   overflow: visible;
 
@@ -248,7 +249,7 @@ const NavDiv = styled.div`
     }
     ul {
       height: 50px;
-
+      margin-top: 0px;
       @media (max-width: 992px) {
         flex-direction: column;
 
@@ -418,6 +419,8 @@ const NavDiv = styled.div`
     cursor: pointer;
     @media (max-width: 992px) {
       padding: 20px;
+      margin-top: 35px;
+      margin-right: 18px;
       display: flex;
       flex-direction: column;
       justify-content: center;

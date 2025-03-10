@@ -2,10 +2,6 @@ import React, { useContext,useEffect  } from "react";
 import styled from "styled-components";
 import Cards from "./Cards";
 import Context1 from "../Context/Context1";
-// import { useGSAP } from '@gsap/react';
-// import {gsap} from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
 
 const QuotesBottom = () => {
 
@@ -18,7 +14,7 @@ const QuotesBottom = () => {
   useEffect(() => {
     // GSAP animation using the global `gsap` from the window object
  window.gsap.from('.Qdiv', {
-      y: 400,  // Start from 200px below the element's initial position
+      y: 250,  // Start from 200px below the element's initial position
       opacity: 0,  // Start from 0 opacity
       duration: 1,  // Duration for the animation
       ease: 'power3.out',  // Easing function to smooth the transition
@@ -43,36 +39,36 @@ const QuotesBottom = () => {
 
         <div className="cards">
           <Cards
-            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214494/3_cards_1_toahsx.webp"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/Compassion_Video_av0lvl.webp"}
             title={"Adam Harder"}
             text={"Senior Video Operations Manager"}
-            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214493/3_cards_1_2_tpm903.webp"}
+            img2={""}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }
-            url={"https://www.youtube.com/embed/rpQFuuoAxTc?si=nQ9Zd6BEtJ1b7P7Y"}
+            url={"https://www.youtube.com/embed/NVtrZI31G2k?si=nk2DTg7V8FDhpC0t"}
           />
 
           <Cards
-            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214494/3_cards_1_toahsx.webp"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/health_vxkd5x.webp"}
             title={"Shonal Narayan"}
             text={"Marketing Manager"}
-            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214493/3_cards_1_2_tpm903.webp"}
+            img2={""}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }
-            url={""}
+            url={"https://www.youtube.com/embed/E01MegVNVJo?si=_dzx_-eKs5qN0EMH"}
           />
 
           <Cards
-            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214494/3_cards_1_toahsx.webp"}
+            img={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214492/burners_r4rvtm.webp"}
             title={"Ron Schniedermann"}
             text={"CEO"}
-            img2={"https://res.cloudinary.com/diyha1kd9/image/upload/v1741214493/3_cards_1_2_tpm903.webp"}
+            img2={""}
             text2={
               "The ROI we were getting, the cost per acquisition and the ARPU just"
             }
-            url={""}
+            url={"https://www.youtube.com/embed/HdvVRbJNuYM?si=_KaFDPYj0kA_ZUOL"}
           />
         </div> 
       

@@ -59,6 +59,7 @@ const NavOpen2 = () => {
       setmobileWidthgconfirm(true);
       setmobileNavWidth("350px");
     } else {
+      setNavOpenCondi(false)
       setmobileWidthgconfirm(false);
       setmobileNavWidth("330px");
     }
@@ -193,7 +194,8 @@ const NavDiv = styled.div`
   display: flex; // Change this to block or grid if sticky still doesn’t work
   align-items: center;
   justify-content: space-between;
-  padding: 5px 50px;
+  padding: 15px 50px;
+  padding-top: 30px;
   width: 100%;
   @media (max-width: 992px) {
     padding: 27px 25px;
@@ -219,10 +221,10 @@ const NavDiv = styled.div`
     }
     ul {
       height: 50px;
- 
+      margin-top: 0px;
       @media (max-width: 992px) {
         flex-direction: column;
-
+  
         height: 102vh;
         position: absolute;
         right: 0px;
@@ -389,6 +391,8 @@ const NavDiv = styled.div`
     cursor: pointer;
     @media (max-width: 992px) {
       padding: 20px;
+      margin-top: 35px;
+      margin-right: 18px;
       display: flex;
       flex-direction: column;
       justify-content: center;

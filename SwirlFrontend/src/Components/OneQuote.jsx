@@ -139,6 +139,7 @@ const OneQuoteDiv = styled.div`
   padding-top: 80px;
   @media (max-width: 830px) {
     padding-bottom: 150px;
+    padding-top: 0px;
   }
   .text {
     display: grid;
