@@ -260,22 +260,38 @@ const ImgSlider = () => {
       }
     );
   
-    // Store GSAP animation instance in Animation2
-    Animation2.current = window.gsap.fromTo(
-      SmallImg2.current,
-      {
-        x: -1500, // Starting position (left side)
-      },
-      {
-        x: 0, // Ending position (right side)
-        delay: 1,
-        duration: Small2 ? 0 : 35,
-        repeat: -1, // Repeat indefinitely
-        yoyo: true, // Reverse the animation after each cycle
-        ease: "linear",
-      }
-    );
+
   }, []);
+  useEffect(() => {
+    if(!thirdSlideImg && SmallImg2.current){
+      // Store GSAP animation instance in Animation2
+      if (!Animation2.current) {
+
+        Animation2.current = window.gsap.fromTo(
+          SmallImg2.current,
+          {
+            x: -1500, // Starting position (left side)
+          },
+          {
+            x: 0, // Ending position (right side)
+            delay: 1,
+            duration: Small2 ? 0 : 35,
+            repeat: -1, // Repeat indefinitely
+            yoyo: true, // Reverse the animation after each cycle
+            ease: "linear",
+          }
+        );
+      }
+
+
+    }else if(Animation2.current){
+      
+      Animation2.current.kill();
+      Animation2.current = null;
+    }
+
+  }, [thirdSlideImg])
+  
   
   const handleMouseEnterImg2 = () => {
     console.log("A")

@@ -224,7 +224,7 @@ const NavDiv = styled.div`
       margin-top: 0px;
       @media (max-width: 992px) {
         flex-direction: column;
-  
+        margin-top: 20px;
         height: 102vh;
         position: absolute;
         right: 0px;
