@@ -140,7 +140,7 @@ const Pricing = () => {
               className={`head font-bold leading-[26.4px]  text-${Textcolor} text-[22px] flex flex-col gap-2 pt-4`}
             >
               Basic
-              <div className="text-[26px] font-extrabold">$299.00</div>
+              <div className="text-[26px] font-extrabold">$499.00</div>
             </div>
 
             <div className={`hr ${hrcolor}`}></div>
@@ -298,7 +298,7 @@ const Pricing = () => {
             </div>
             <div className="head font-bold leading-[26.4px]  text-[#ffffff] pt-4 text-[22px] flex flex-col gap-2">
               Standard
-              <div className="text-[26px] font-extrabold">$599.00</div>
+              <div className="text-[26px] font-extrabold">$999.00</div>
             </div>
 
             <div className="hr bg-white"></div>
@@ -443,7 +443,7 @@ const Pricing = () => {
               className={`head font-bold leading-[26.4px] text-[22px] text-${Textcolor} pt-4 flex flex-col gap-2`}
             >
               Premium
-              <div className="text-[26px] font-extrabold">$999.00</div>
+              <div className="text-[26px] font-extrabold">$1499.00</div>
             </div>
 
             <div className={`hr ${hrcolor}`}></div>
